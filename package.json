@@ -1,0 +1,18 @@
+{
+  "title": "New Moon",
+  "name": "new-moon",
+  "description": "New Moon Theme",
+  "version": "1.0.0",
+  "author": "Tania Rascia <taniarascia@gmail.com> (http://www.taniarascia.com)",
+  "homepage": "https://github.com/taniarascia/new-moon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/taniarascia/new-moon.git"
+  },
+  "theme": {
+    "file": "main.less",
+    "dark": true
+  },
+  "screenshot": "screenshot.png"
+}
