@@ -6,4 +6,4 @@ This theme was created to be optimized for front end web development - HTML, CSS
 I found most of the dark themes I tried to be distracting and overly colorful and contrast heavy, especially with PHP embedded into HTML. The New Moon theme strives to remedy that, with a theme that is pleasant to view in any language.
 
 ## CSS
-![HTML Screenshot](https://github.com/taniarascia/new-moon/screenshot.png)
+![HTML Screenshot](https://github.com/taniarascia/new-moon/blob/master/screenshot.png)
