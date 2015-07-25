@@ -13,10 +13,10 @@
 @matchingtag-background: rgba(0, 0, 0, 0.7);
 
 
-.CodeMirror-scroll { background: @background; color: @foreground; font-size: 12px; /* line-height: 1.2; -webkit-font-smoothing: subpixel-antialiased; */
+.CodeMirror-scroll { background: @background; color: @foreground; /*font-size: 12px; line-height: 1.2; -webkit-font-smoothing: subpixel-antialiased; */
  } /**/
-.CodeMirror { background: @background; color: @foreground; } /**/
- .CodeMirror-selected { background: #444444 !important; } /**/
+.CodeMirror { background: @background; color: @foreground; }
+.CodeMirror-selected { background: #dddddd !important; }
 
 .CodeMirror-gutters { background: #222; border-right: 0px solid #222 !important; }
 .CodeMirror-guttermarker { color: white; }
@@ -24,23 +24,23 @@
 .CodeMirror-linenumber { color: #aaa; }
 .CodeMirror-cursor { border-left: 1px solid white !important; }
 
-.cm-keyword {  color: #ffeead; } /**/
+.cm-keyword {  color: #ffeead; } 
 .cm-atom { color: #9dbede; }
-.cm-number { color:  #f99157; } /**/
+.cm-number { color:  #f99157; } 
 .cm-def { color: #8DA6CE; }
-span.cm-variable-2,  span.cm-tag { color: #6699cc; } /**/
-span.cm-variable-3,  span.cm-def { color: #66cccc; } /**/
-.cm-operator { color: #cda869; } /**/
-.cm-comment { color:#777; font-style:normal; font-weight:normal; } /**/
-.cm-string { color:#99cc99; font-style:normal; } /**/
-.cm-string-2 { color:#bd6b18; } /*?*/
-.cm-meta { background-color:#141414; color:#f7f7f7; } /*?*/
-.cm-builtin { color: #cc99cc; } /*?*/
-.cm-tag { color: #997643; } /**/
-.cm-attribute { color: #ffcc66; } /*?*/
+span.cm-variable-2,  span.cm-tag { color: #6699cc; } 
+span.cm-variable-3,  span.cm-def { color: #66cccc; }
+.cm-operator { color: #cda869; } 
+.cm-comment { color:#777; font-style:normal; font-weight:normal; } 
+.cm-string { color:#99cc99; font-style:normal; }
+.cm-string-2 { color:#bd6b18; } 
+.cm-meta { background-color:#141414; color:#f7f7f7; } 
+.cm-builtin { color: #cc99cc; }
+.cm-tag { color: #997643; } 
+.cm-attribute { color: #ffcc66; }
 .cm-header { color: #FF6400; }
 .cm-hr { color: #AEAEAE; }
-.cm-link {   color:#ad9361; font-style:normal; text-decoration:none; } /**/
+.cm-link {   color:#ad9361; font-style:normal; text-decoration:none; }
 .cm-error { border-bottom: 1px solid #f2777a; }
 .cm-qualifier{color: #ffcc66}
 .cm-property {color: #d4d4d4}
