@@ -1,7 +1,7 @@
 {
   "title": "New Moon",
   "name": "new-moon",
-  "description": "New Moon Theme",
+  "description": "New Moon Theme for Brackets. A beautiful, middle-contrast dark theme inspired by Twilight and Tomorrow Night Eighties. Truly a lovely sight to behold.",
   "version": "1.1.0",
   "author": "Tania Rascia <taniarascia@gmail.com> (http://www.taniarascia.com)",
   "homepage": "https://github.com/taniarascia/new-moon",
@@ -13,6 +13,8 @@
   "theme": {
     "file": "main.less",
     "dark": true
+  },
+  "keywords": {["theme","dark","twilight","tomorrow"]
   },
   "screenshot": "images/screenshot.png"
 }
