@@ -1,91 +1,175 @@
-/**
- New Moon
- **/
-
-@background: #353535; 
-@foreground: #cdcdcd;
-@comment: #797979;
-
-@cursor: white;
-
-@activeline-background: rgba(96, 96, 96, 0.5);
-@activeline-foreground: rgba(96, 96, 96, 0.3);
-@matchingtag-background: rgba(0, 0, 0, 0.7);
+/** 
+* New Moon Theme for Brackets
+* by Tania Rascia!
+**/
 
 
-.CodeMirror-scroll { background: @background; color: @foreground; /*font-size: 12px; line-height: 1.2; -webkit-font-smoothing: subpixel-antialiased; */
- } /**/
-.CodeMirror { background: @background; color: @foreground; }
-.CodeMirror-selected { background: rgba(0, 0, 0, 0.6) !important; }
+/* Variables */
 
-.CodeMirror-gutters { background: #222; border-right: 0px solid #222 !important; }
-.CodeMirror-guttermarker { color: white; }
-.CodeMirror-guttermarker-subtle { color: #aaa; }
-.CodeMirror-linenumber { color: #aaa; }
-.CodeMirror-cursor { border-left: 1px solid white !important; }
+@background: #3a3a3a; // Code background
+@foreground: #cdcdcd; // Code foreground
+@comment: #868a8c; // Comment color
+@comment-active: #aaaaaa; // Comment active
+@cursor: #ffffff; // Cursor color 
+@activeline-background: rgba(0, 0, 0, 0.2); // Active line
+@activeline-foreground: rgba(0, 0, 0, 0.3);
+@matchingtag-background: rgba(0, 0, 0, 0.7); // Matching tag
+@selected-background: rgba(0, 0, 0, 0.6); // Selected text
 
-.cm-keyword {  color: #ffeead; } 
-.cm-atom { color: #9dbede; }
-.cm-number { color:  #f99157; } 
-.cm-def { color: #8DA6CE; }
-span.cm-variable-2,  span.cm-tag { color: #5999c7; }
-span.cm-variable-3,  span.cm-def { color: #6dc5dc; }
-.cm-operator { color: #cda869; } 
-.cm-comment { color: @comment; font-style:normal; font-weight:normal; } 
-.cm-string { color:#99ccaa; font-style:normal; }
-.cm-string-2 { color:#bd6b18; } 
-.cm-meta { background-color:#141414; color:#f7f7f7; } 
-.cm-builtin { color: #cc99cc; }
-.cm-tag { color: #997643; } 
-.cm-attribute { color: #fede88; }
-.cm-header { color: #FF6400; }
-.cm-hr { color: #AEAEAE; }
-.cm-link {   color:#ad9361; font-style:normal; text-decoration:none; }
-.cm-error { border-bottom: 1px solid #f2777a; }
-.cm-qualifier{color: #ffcc66}
-.cm-property {color: #d4d4d4}
-.cm-quote {color: #D6D7AF}
-.cm-variable {color: #ffffff;}
+/* Inline variables */
 
- .CodeMirror-activeline-background {background: #27282E !important;}
- .CodeMirror-matchingbracket {outline:1px solid grey; color:white !important; background: transparent;}
+@string: #99ccaa; // HTML, CSS, JS string
+@tag: #5D9CD0;
+@variable: #6dc5dc;
+@variable2: #fff;
+@number: #f99157;
+@definition: #9dbedd; // CSS definition
+@keyword: #ffeead; // CSS !important, JS define a variable
+@operator: #cda869; // Math
+@meta: #141414;
+@meta-color: #f7f7f7;
+@id: #cc99cc; // CSS ID
+@attribute: #fede88; // HTML class=""
+@property: #d4d4d4; // CSS definer
+@qualifier: #ffcc66; // CSS class
+/* Styles */
 
-
-/** Cursors */
-.CodeMirror .CodeMirror-cursor {
-    border-left: 1px solid @cursor !important;
+// Main screen
+.CodeMirror,
+.CodeMirror-scroll {
+  background: @background;
+  color: @foreground;
+}
+.CodeMirror-selected {
+  background: @selected-background !important;
+}
+.CodeMirror-linenumber {
+  color: @comment;
+}
+.cm-keyword {
+  color: @keyword;
+}
+.cm-atom {
+  color: @definition;
+}
+.cm-number {
+  color: @number;
+}
+.cm-def {
+  color: @definition;
+}
+span.cm-variable-2,
+span.cm-tag {
+  color: @tag;
+}
+span.cm-variable-3,
+span.cm-def {
+  color: @variable;
+}
+.cm-operator {
+  color: @operator;
+}
+.cm-comment {
+  color: @comment;
+}
+.cm-string {
+  color: @string;
+}
+.cm-string-2 {
+  color: #bd6b18;
+}
+.cm-meta {
+  background-color: @meta;
+  color: @meta-color;
+}
+.cm-builtin {
+  color: @id;
+}
+.cm-tag {
+  color: #997643;
+}
+.cm-attribute {
+  color: @attribute;
+}
+.cm-header {
+  color: #FF6400;
+}
+.cm-hr {
+  color: #AEAEAE;
+}
+.cm-link {
+  color: #ad9361;
+}
+.cm-error {
+  color: #f2777a;
+  //border-bottom: 1px solid #f2777a;
+}
+.cm-qualifier {
+  color: @qualifier;
+}
+.cm-property {
+  color: @property;
+}
+.cm-quote {
+  color: #D6D7AF
+}
+.cm-variable {
+  color: @variable2;
+}
+.CodeMirror-activeline-background {
+  background: #27282E !important;
 }
 
-.CodeMirror .CodeMirror-overwrite .CodeMirror-cursor {
-    border-left: none !important;
-    border-bottom: 1px solid @cursor;
-    width: 1.2ex;
+/* Matching brackets */
+
+.CodeMirror-matchingbracket {
+  outline: 1px solid white;
+  color: white !important;
+  background: transparent;
+}
+.CodeMirror-activeline .cm-comment {
+  color: @comment-active;
 }
 
-
-/** Gutter treatment */
-.CodeMirror .CodeMirror-gutters {
-    background-color: @background;
-    border-right: 1px solid #696969;
-}
-
-.CodeMirror-activeline .CodeMirror-gutter-elt {
-    color: @foreground !important;
-}
-
-.CodeMirror-gutter-elt {
-    color: @comment !important;
-}
-
-.CodeMirror .CodeMirror-linenumber {
-    color: @activeline-foreground;
-}
-
-.CodeMirror-activeline-background,
-.CodeMirror-activeline .CodeMirror-gutter-elt {
-    background: @activeline-background !important;
-}
+/* Matching tags */
 
 .CodeMirror-matchingtag {
-    background: @matchingtag-background;
+  background: @matchingtag-background;
+}
+
+/* Cursors */
+
+.CodeMirror .CodeMirror-cursor {
+  border-left: 1px solid @cursor !important;
+}
+.CodeMirror .CodeMirror-overwrite .CodeMirror-cursor {
+  border-left: none !important;
+  border-bottom: 1px solid @cursor;
+  width: 1.2ex;
+}
+
+/* Gutter treatment */
+
+.CodeMirror-guttermarker {
+  color: #fff;
+}
+.CodeMirror-guttermarker-subtle {
+  color: #aaa;
+}
+.CodeMirror .CodeMirror-gutters {
+  background-color: @background;
+  border-right: 0;
+}
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+  color: @foreground !important;
+}
+.CodeMirror-gutter-elt {
+  color: @comment !important;
+}
+.CodeMirror .CodeMirror-linenumber {
+  color: @activeline-foreground;
+}
+.CodeMirror-activeline-background,
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+  background: @activeline-background !important;
 }
