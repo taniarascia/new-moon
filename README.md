@@ -2,6 +2,7 @@ New Moon Theme for Brackets
 ===========================
 
 *Update 10/27/2015 - Improvements to matching brackets and active line*
+
 *Update 10/23/2015 - Improvements to legibility for comments and errors*
 
 This theme was created to be optimized for front end web development - HTML, CSS, JavaScript and PHP/Wordpress. It's a low contrast dark theme using color inspiration from Tomorrow Night Eighties, and style inspiration from Twilight. 
