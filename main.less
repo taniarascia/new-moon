@@ -1,4 +1,6 @@
-/** 
+// out: null
+
+/**  
 * New Moon Theme for Brackets
 * by Tania Rascia!
 **/
@@ -15,6 +17,7 @@
 @activeline-foreground: rgba(0, 0, 0, 0.3);
 @matchingtag-background: rgba(0, 0, 0, 0.7); // Matching tag
 @selected-background: rgba(0, 0, 0, 0.6); // Selected text
+@matchingbracket-background: rgba(255,255,255,.2);
 
 /* Inline variables */
 
@@ -92,7 +95,7 @@ span.cm-def {
   color: @attribute;
 }
 .cm-header {
-  color: #FF6400;
+  color: @attribute;
 }
 .cm-hr {
   color: #AEAEAE;
@@ -115,7 +118,7 @@ span.cm-def {
 }
 .cm-variable {
   color: @variable2;
-}
+} 
 .CodeMirror-activeline-background {
   background: #27282E !important;
 }
@@ -123,9 +126,9 @@ span.cm-def {
 /* Matching brackets */
 
 .CodeMirror-matchingbracket {
-  outline: 1px solid white;
+  outline: 1px solid #888;
   color: white !important;
-  background: transparent;
+  background: @matchingbracket-background;
 }
 .CodeMirror-activeline .cm-comment {
   color: @comment-active;
@@ -161,7 +164,7 @@ span.cm-def {
   border-right: 0;
 }
 .CodeMirror-activeline .CodeMirror-gutter-elt {
-  color: @foreground !important;
+  color: #fff !important;
 }
 .CodeMirror-gutter-elt {
   color: @comment !important;
