@@ -1,6 +1,8 @@
 New Moon Theme for Brackets
 ===========================
 
+**New Moon is now available for Sublime Text! [Check it out!](https://github.com/taniarascia/new-moon-sublime)
+
 *Update 10/27/2015 - Improvements to matching brackets and active line*
 
 *Update 10/23/2015 - Improvements to legibility for comments and errors*
