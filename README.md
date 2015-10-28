@@ -14,11 +14,20 @@ Most of the dark themes I tried using were distracting and overly colorful and c
 ## HTML
 ![HTML Screenshot](https://github.com/taniarascia/new-moon/blob/master/images/html.png)
 
-## CSS/LESS
-![CSS Screenshot](https://github.com/taniarascia/new-moon/blob/master/images/css.png)
-
 ## PHP
 ![PHP Screenshot](https://github.com/taniarascia/new-moon/blob/master/images/php.png)
+
+## PHP/HTML
+![PHP Screenshot](https://github.com/taniarascia/new-moon/blob/master/images/phphtml.png)
+
+## CSS
+![CSS Screenshot](https://github.com/taniarascia/new-moon/blob/master/images/css.png)
+
+## Sass
+![CSS Screenshot](https://github.com/taniarascia/new-moon/blob/master/images/sass.png)
+
+## LESS
+![CSS Screenshot](https://github.com/taniarascia/new-moon/blob/master/images/less.png)
 
 ## JavaScript
 ![JS Screenshot](https://github.com/taniarascia/new-moon/blob/master/images/js.png)
