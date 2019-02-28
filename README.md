@@ -1,6 +1,6 @@
-# ![New Moon Icon](new-moon-logo.png) New Moon Syntax Theme
+![New Moon Icon](new-moon-logo.png)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+# New Moon Syntax Theme [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 The optimized dark theme for web development.
 
@@ -18,7 +18,7 @@ New Moon is available for:
 
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode)
 - [Chrome DevTools](https://github.com/taniarascia/new-moon-chrome-devtools)
-- [iTerm2](https://github.com/taniarascia/new-moon/iterm2)
+- [iTerm2](https://github.com/taniarascia/new-moon/tree/master/iterm2)
 - [Brackets](https://github.com/taniarascia/new-moon-brackets)
 - [Sublime Text](https://packagecontrol.io/packages/New%20Moon%20Color%20Scheme)
 - [Atom](https://github.atom.io/packages/new-moon-atom-syntax)
@@ -110,7 +110,7 @@ New Moon can be installed through the package/extension/plugin manager by search
 ## Acknowledgements
 
 - Originally inspired by Twilight and [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme).
-- Chrome DevTools theme fornked from [Zero Base Themes](https://github.com/mauricecruz/zero-base-themes)
+- Chrome DevTools theme forked from [Zero Base Themes](https://github.com/mauricecruz/zero-base-themes)
 
 ## Author
 
