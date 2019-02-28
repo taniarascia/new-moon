@@ -27,25 +27,20 @@ New Moon is available for:
 
 ## What Are People Saying?
 
-> Absolutely beautiful theme. Definitely deserves more recognition .
->
-> - _Arcadia_
+> “Absolutely beautiful theme. Definitely deserves more recognition.”
+> — _Arcadia_
 
-> Undoubtedly the best color theme ever. Just install and see yourself. The background color is perfect for long time exposure to the eyes. And the code color is well lit and separated from each other.
->
-> - _Ibnul Alam_
+> “Undoubtedly the best color theme ever. Just install and see yourself. The background color is perfect for long time exposure to the eyes. And the code color is well lit and separated from each other.”
+> — _Ibnul Alam_
 
-> Great theme for long coding hours.
->
-> - _Volkan_
+> “Great theme for long coding hours.”
+> — _Volkan_
 
-> Really surprised this theme isn't more popular. It's a joy to use for HTML/CSS/JS and PHP. I like that it isn't heavy on blue colors like a lot of the popular dark themes.
->
-> - _Brendan_
+> “Really surprised this theme isn't more popular. It's a joy to use for HTML/CSS/JS and PHP. I like that it isn't heavy on blue colors like a lot of the popular dark themes.”
+> — _Brendan_
 
-> I've been using New Moon for several weeks now, I love it. The color palette is very easy on the eyes, especially after a few hours of coding.
->
-> - _Jose_
+> “I've been using New Moon for several weeks now, I love it. The color palette is very easy on the eyes, especially after a few hours of coding.”
+> — _Jose_
 
 ## Colors
 
@@ -75,15 +70,15 @@ New Moon is available for:
 
 ![New Moon Screenshot](docs/samples/iterm2.png)
 
-### JavaScript
+### VSC: JavaScript
 
 ![New Moon Screenshot](docs/samples/react.png)
 
-### CSS/Sass
+### VSC: CSS/Sass
 
 ![New Moon Screenshot](docs/samples/css.png)
 
-### PHP
+### VSC: PHP
 
 ![New Moon Screenshot](docs/samples/php2.png)
 
