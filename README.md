@@ -69,7 +69,7 @@ New Moon is available for:
 
 ### Chrome DevTools
 
-![New Moon Screenshot](docs/samples/chromedetools.png)
+![New Moon Screenshot](docs/samples/chromedevtools.png)
 
 ### iTerm2
 
