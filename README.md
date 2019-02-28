@@ -4,6 +4,8 @@
 
 The optimized dark theme for web development.
 
+- [View Website](https://taniarascia.github.io/new-moon)
+
 ## Intuitive Syntax Highlighting
 
 [New Moon](https://taniarascia.github.io/new-moon) is the optimized dark theme for web development. I've meticulously designed New Moon to be easy on the eyes with intuitive connections between related elements. It's pleasant for long coding hours in any language, and particularly well suited for HTML, CSS, Sass, PHP, and JavaScript.
