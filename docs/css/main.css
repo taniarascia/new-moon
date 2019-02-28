@@ -1,0 +1,196 @@
+html {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  background: #2d2d2d;
+  color: #b3b9c5;
+  font-family: 'Averia Serif Libre', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+}
+
+a {
+  color: #ffeea6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffd479;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #848991;
+  margin: 2rem 0;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  margin: 1.5rem auto;
+  max-width: 150px;
+}
+
+.logo2 {
+  max-width: 75px;
+  margin: 1.5rem 0.5rem;
+  transition: all .1s ease;
+}
+
+.logo2:hover {
+  transform: scale(1.1);
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin-top: -1rem !important;
+  margin-bottom: 0;
+  color: #ffeea6;
+  background: -webkit-linear-gradient(#ffeea6, #ffd479);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child) {
+  margin-top: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #444;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #444;
+}
+
+blockquote {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #444;
+  padding: 1rem;
+  margin: 0;
+}
+
+cite {
+  display: block;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.subtitle {
+  font-family: 'Averia Serif Libre', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 0 0.5rem 0 0;
+}
+
+.y {
+  color: #ffd479;
+}
+
+.y2 {
+  background: #ffd479;
+}
+
+.b {
+  color: #6ab0f3;
+}
+
+.b2 {
+  background: #6ab0f3;
+}
+
+.g {
+  color: #92d192;
+}
+
+.g2 {
+  background: #92d192;
+}
+
+.r {
+  color: #f2777a;
+}
+
+.r2 {
+  color: #f2777a;
+}
+
+.p {
+  color: #e1a6f2;
+}
+
+.p2 {
+  background: #e1a6f2;
+}
+
+.o {
+  color: #fca369;
+}
+
+.o2 {
+  background: #fca369;
+}
+
+.a {
+  color: #62cfcf;
+}
+
+.a2 {
+  background: #62cfcf;
+}
+
+.credits {
+  margin: 3rem 0;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.1);
+}
