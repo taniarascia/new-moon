@@ -82,7 +82,7 @@ New Moon is available for:
 
 ### VSC: PHP
 
-![New Moon Screenshot PHP](images/php2.png)
+![New Moon Screenshot PHP](images/php.png)
 
 ## Installation
 
