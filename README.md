@@ -74,7 +74,7 @@ New Moon is available for:
 
 ### VSC: JavaScript/React
 
-![New Moon Screenshot JS](images/react.png)
+![New Moon Screenshot JS](images/js.png)
 
 ### VSC: CSS/Sass
 
