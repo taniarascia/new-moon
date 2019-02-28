@@ -1,4 +1,4 @@
-![New Moon Icon](new-moon-logo.png)
+![New Moon Icon](images/new-moon-logo.png)
 
 # New Moon Syntax Theme [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -66,23 +66,23 @@ New Moon is available for:
 
 ### Chrome DevTools
 
-![New Moon Screenshot](docs/samples/chromedevtools.png)
+![New Moon Screenshot Chrome DevTools](images/chromedevtools.png)
 
 ### iTerm2
 
-![New Moon Screenshot](docs/samples/iterm2.png)
+![New Moon Screenshot iTerm2](images/iterm2.png)
 
-### VSC: JavaScript
+### VSC: JavaScript/React
 
-![New Moon Screenshot](docs/samples/react.png)
+![New Moon Screenshot JS](images/react.png)
 
 ### VSC: CSS/Sass
 
-![New Moon Screenshot](docs/samples/css.png)
+![New Moon Screenshot CSS](images/css.png)
 
 ### VSC: PHP
 
-![New Moon Screenshot](docs/samples/php2.png)
+![New Moon Screenshot PHP](images/php2.png)
 
 ## Installation
 
