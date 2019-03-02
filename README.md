@@ -115,4 +115,4 @@ New Moon can be installed through the package/extension/plugin manager by search
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE.md).
+This project is open source and available under the [MIT License](LICENSE).
