@@ -24,6 +24,7 @@ New Moon is available for:
 - [Brackets](https://github.com/taniarascia/new-moon-brackets)
 - [Sublime Text](https://packagecontrol.io/packages/New%20Moon%20Color%20Scheme)
 - [Atom](https://github.atom.io/packages/new-moon-atom-syntax)
+- [Hyper Term](https://github.com/Tmeister/hyperterm-new-moon-theme)
 
 > **Note:** The Visual Studio Code, Chrome DevTools, and iTerm2 themes are actively maintained.
 
