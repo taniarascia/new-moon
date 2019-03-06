@@ -4,12 +4,11 @@ html {
 
 body {
   margin: 0;
-  font-family: sans-serif;
   line-height: 1.6;
   font-weight: 400;
-  background: #2d2d2d;
+  background-color: #2d2d2d;
   color: #b3b9c5;
-  font-family: 'Averia Serif Libre', sans-serif;
+  font-family: "Averia Serif Libre", sans-serif;
 }
 
 h1,
@@ -53,6 +52,7 @@ img {
 }
 
 .logo2:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -61,7 +61,7 @@ header {
 }
 
 h1 {
-  font-family: 'Cinzel Decorative', sans-serif;
+  font-family: "Cinzel Decorative", sans-serif;
   font-size: 4.5rem;
   font-weight: 400;
   margin-top: -1rem !important;
@@ -106,7 +106,7 @@ cite {
 }
 
 .subtitle {
-  font-family: 'Averia Serif Libre', sans-serif;
+  font-family: "Averia Serif Libre", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -118,8 +118,11 @@ cite {
 }
 
 .flex {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -136,7 +139,7 @@ cite {
 }
 
 .y2 {
-  background: #ffd479;
+  background-color: #ffd479;
 }
 
 .b {
@@ -144,7 +147,7 @@ cite {
 }
 
 .b2 {
-  background: #6ab0f3;
+  background-color: #6ab0f3;
 }
 
 .g {
@@ -152,7 +155,7 @@ cite {
 }
 
 .g2 {
-  background: #92d192;
+  background-color: #92d192;
 }
 
 .r {
@@ -168,7 +171,7 @@ cite {
 }
 
 .p2 {
-  background: #e1a6f2;
+  background-color: #e1a6f2;
 }
 
 .o {
@@ -176,7 +179,7 @@ cite {
 }
 
 .o2 {
-  background: #fca369;
+  background-color: #fca369;
 }
 
 .a {
@@ -184,13 +187,17 @@ cite {
 }
 
 .a2 {
-  background: #62cfcf;
+  background-color: #62cfcf;
 }
 
 .credits {
   margin: 3rem 0;
 }
 
+::-moz-selection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 ::selection {
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }

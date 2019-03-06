@@ -4,11 +4,11 @@
 
 The optimized dark theme for web development.
 
-- [View Website](https://taniarascia.github.io/new-moon)
+- [View Website](https://taniarascia.github.io/new-moon/)
 
 ## Intuitive Syntax Highlighting
 
-[New Moon](https://taniarascia.github.io/new-moon) is the optimized dark theme for web development. I've meticulously designed New Moon to be easy on the eyes with intuitive connections between related elements. It's pleasant for long coding hours in any language, and particularly well suited for HTML, CSS, Sass, PHP, and JavaScript.
+[New Moon](https://taniarascia.github.io/new-moon/) is the optimized dark theme for web development. I've meticulously designed New Moon to be easy on the eyes with intuitive connections between related elements. It's pleasant for long coding hours in any language, and particularly well suited for HTML, CSS, Sass, PHP, and JavaScript.
 
 - HTML & CSS work together
 - Optimized for JSX and React
@@ -24,6 +24,7 @@ New Moon is available for:
 - [Brackets](https://github.com/taniarascia/new-moon-brackets)
 - [Sublime Text](https://packagecontrol.io/packages/New%20Moon%20Color%20Scheme)
 - [Atom](https://github.atom.io/packages/new-moon-atom-syntax)
+- [Hyper Term](https://github.com/Tmeister/hyperterm-new-moon-theme)
 
 > **Note:** The Visual Studio Code, Chrome DevTools, and iTerm2 themes are actively maintained.
 
@@ -111,7 +112,7 @@ New Moon can be installed through the package/extension/plugin manager by search
 
 ## Author
 
-- [Tania Rascia](https://www.taniarascia.com)
+- [Tania Rascia](https://www.taniarascia.com/)
 
 ## License
 
