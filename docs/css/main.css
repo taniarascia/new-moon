@@ -28,6 +28,10 @@ a:hover {
   color: #ffd479;
 }
 
+a img:hover {
+  text-decoration: none;
+}
+
 p {
   font-size: 1.2rem;
   color: #848991;
