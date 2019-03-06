@@ -57,7 +57,7 @@ New Moon is available for:
 | Number          | Orange       | ![#FCA369](https://placehold.it/15/FCA369/000000?text=+) `#fca369`  |
 | Attribute       | Yellow       | ![#FFD479](https://placehold.it/15/FFD479/000000?text=+) `#ffd479`  |
 | Keyword         | Light Yellow | ![#ffeea6](https://placehold.it/15/FFEEA6/000000?text=+) `#ffeea6`  |
-| String          | Green        | ![#92D192](https://placehold.it/15/92D192/000000?text=+) `##92d192` |
+| String          | Green        | ![#92D192](https://placehold.it/15/92D192/000000?text=+) `#92d192` |
 | Class/Tag       | Blue         | ![#6AB0F3](https://placehold.it/15/6AB0F3/000000?text=+) `#6AB0F3`  |
 | Constant/Pseudo | Aqua         | ![#76D4D6](https://placehold.it/15/76D4D6/000000?text=+) `#76d4d6`  |
 | Support         | Purple       | ![#E1A6F2](https://placehold.it/15/E1A6F2/000000?text=+) `#e1a6f2`  |
