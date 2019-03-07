@@ -5,10 +5,10 @@ html {
 body {
   margin: 0;
   line-height: 1.6;
+  font-family: "Averia Serif Libre", sans-serif;
   font-weight: 400;
   background-color: #2d2d2d;
   color: #b3b9c5;
-  font-family: "Averia Serif Libre", sans-serif;
 }
 
 h1,
@@ -32,6 +32,11 @@ a img:hover {
   text-decoration: none;
 }
 
+b,
+strong {
+  font-weight: bolder;
+}
+
 p {
   font-size: 1.2rem;
   color: #848991;
@@ -39,6 +44,7 @@ p {
 }
 
 img {
+  border-style: none;
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -58,6 +64,10 @@ img {
 .logo2:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.logos a {
+  display: inline-block;
 }
 
 header {
