@@ -45,6 +45,9 @@ New Moon is available for:
 > “I've been using New Moon for several weeks now, I love it. The color palette is very easy on the eyes, especially after a few hours of coding.”
 > — _Jose_
 
+> “Wonderful. Well crafted with a clear sense of experience and focus. It actually helps me code more by enjoying the process more. Excellent work Tania.”
+> — _Monte_
+
 ## Colors
 
 | Usage           | Palette      | Hex Code                                                            |
