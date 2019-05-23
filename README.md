@@ -1,4 +1,4 @@
-![New Moon Icon](images/new-moon-logo.png)
+![New Moon Icon](images/new-moon-vector.png)
 
 # New Moon Syntax Theme [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -8,7 +8,7 @@ The optimized dark theme for web development.
 
 ## Intuitive Syntax Highlighting
 
-[New Moon](https://taniarascia.github.io/new-moon/) is the optimized dark theme for web development. I've meticulously designed New Moon to be easy on the eyes with intuitive connections between related elements. It's pleasant for long coding hours in any language, and particularly well suited for HTML, CSS, Sass, PHP, and JavaScript.
+[New Moon](https://taniarascia.github.io/new-moon/) is the optimized dark theme for web development. It has been meticulously designed to be easy on the eyes and intuitive. It's pleasant for long coding hours in any language, and particularly well suited for HTML, CSS, SCSS/LESS, PHP (WordPress), and JavaScript (React, Vue).
 
 - HTML & CSS work together
 - Optimized for JSX and React
@@ -25,6 +25,8 @@ New Moon is available for:
 - [Sublime Text](https://packagecontrol.io/packages/New%20Moon%20Color%20Scheme)
 - [Atom](https://github.atom.io/packages/new-moon-atom-syntax)
 - [Hyper Term](https://github.com/Tmeister/hyperterm-new-moon-theme)
+- [Blink Shell](https://github.com/taniarascia/new-moon/tree/master/blink-shell)
+- [VIM](https://github.com/taniarascia/new-moon.vim)
 
 > **Note:** The Visual Studio Code, Chrome DevTools, and iTerm2 themes are actively maintained.
 
@@ -50,21 +52,21 @@ New Moon is available for:
 
 ## Colors
 
-| Usage           | Palette      | Hex Code                                                            |
-| --------------- | ------------ | ------------------------------------------------------------------- |
-| Background      | Darkest      | ![#2d2d2d](https://placehold.it/15/2d2d2d/ffffff?text=+) `#2d2d2d`  |
-| Comment         | Medium       | ![#777c85](https://placehold.it/15/777c85/000000?text=+) `#777c85`  |
-| Foreground      | Light        | ![#b3b9c5](https://placehold.it/15/b3b9c5/000000?text=+) `#b3b9c5`  |
-| Function        | Lightest     | ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`  |
-| Variable        | Red          | ![#f2777a](https://placehold.it/15/f2777a/000000?text=+) `#f2777a`  |
-| Number          | Orange       | ![#FCA369](https://placehold.it/15/FCA369/000000?text=+) `#fca369`  |
-| Attribute       | Yellow       | ![#FFD479](https://placehold.it/15/FFD479/000000?text=+) `#ffd479`  |
-| Keyword         | Light Yellow | ![#ffeea6](https://placehold.it/15/FFEEA6/000000?text=+) `#ffeea6`  |
+| Usage           | Palette      | Hex Code                                                           |
+| --------------- | ------------ | ------------------------------------------------------------------ |
+| Background      | Darkest      | ![#2d2d2d](https://placehold.it/15/2d2d2d/ffffff?text=+) `#2d2d2d` |
+| Comment         | Medium       | ![#777c85](https://placehold.it/15/777c85/000000?text=+) `#777c85` |
+| Foreground      | Light        | ![#b3b9c5](https://placehold.it/15/b3b9c5/000000?text=+) `#b3b9c5` |
+| Function        | Lightest     | ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff` |
+| Variable        | Red          | ![#f2777a](https://placehold.it/15/f2777a/000000?text=+) `#f2777a` |
+| Number          | Orange       | ![#FCA369](https://placehold.it/15/FCA369/000000?text=+) `#fca369` |
+| Attribute       | Yellow       | ![#FFD479](https://placehold.it/15/FFD479/000000?text=+) `#ffd479` |
+| Keyword         | Light Yellow | ![#ffeea6](https://placehold.it/15/FFEEA6/000000?text=+) `#ffeea6` |
 | String          | Green        | ![#92D192](https://placehold.it/15/92D192/000000?text=+) `#92d192` |
-| Class/Tag       | Blue         | ![#6AB0F3](https://placehold.it/15/6AB0F3/000000?text=+) `#6AB0F3`  |
-| Constant/Pseudo | Aqua         | ![#76D4D6](https://placehold.it/15/76D4D6/000000?text=+) `#76d4d6`  |
-| Support         | Purple       | ![#E1A6F2](https://placehold.it/15/E1A6F2/000000?text=+) `#e1a6f2`  |
-| Operator        | Beige        | ![#ac8d58](https://placehold.it/15/ac8d58/000000?text=+) `#ac8d58`  |
+| Class/Tag       | Blue         | ![#6AB0F3](https://placehold.it/15/6AB0F3/000000?text=+) `#6AB0F3` |
+| Constant/Pseudo | Aqua         | ![#76D4D6](https://placehold.it/15/76D4D6/000000?text=+) `#76d4d6` |
+| Support         | Purple       | ![#E1A6F2](https://placehold.it/15/E1A6F2/000000?text=+) `#e1a6f2` |
+| Operator        | Beige        | ![#ac8d58](https://placehold.it/15/ac8d58/000000?text=+) `#ac8d58` |
 
 ## Screenshots
 
@@ -80,7 +82,7 @@ New Moon is available for:
 
 ![New Moon Screenshot JS](images/js.png)
 
-### VSC: CSS/Sass
+### VSC: CSS/SCSS
 
 ![New Moon Screenshot CSS](images/css.png)
 
