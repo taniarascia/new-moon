@@ -1,6 +1,8 @@
 ![New Moon Icon](images/new-moon-vector-thumbnail.png)
 
-# New Moon Syntax Theme [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/taniarascia.new-moon-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/taniarascia.new-moon-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode)
+# New Moon Syntax Theme 
+
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/taniarascia.new-moon-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/taniarascia.new-moon-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/taniarascia.new-moon-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 The optimized dark theme for web development.
 
@@ -89,26 +91,6 @@ New Moon is available for:
 ### VSC: PHP
 
 ![New Moon Screenshot PHP](images/php.png)
-
-## Installation
-
-New Moon can be installed through the package/extension/plugin manager by searching for "new-moon".
-
-### Chrome DevTools
-
-1. Navigate to chrome://flags, find Developer Tools Experiments and toggle to Enabled.
-1. Reload Chrome.
-1. In DevTools, click the three dots menu, go to Settings -> Experiments and select Allow UI Themes.
-1. Set theme to "Dark Mode"
-1. Load a new tab and enjoy your awesome new DevTools theme!
-
-### iTerm2
-
-1. iTerm2 > Preferences > Profiles > Colors
-1. Load Presets
-1. Select Import
-1. Select `new-moon.itermcolors`
-1. Select New Moon from color presets
 
 ## Acknowledgements
 
