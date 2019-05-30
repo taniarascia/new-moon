@@ -1,0 +1,171 @@
+// ==========================================================================
+// Status Bar
+// ==========================================================================
+
+// style select box
+select.toolbar-item,
+select.toolbar-item:hover {
+	color: @global-text !important;
+	text-shadow: none !important;
+	border-left: 1px solid @toolbar-divider;
+	border-right: 1px solid @toolbar-divider;
+	border-top: none !important;
+	border-bottom: none !important;
+	background: inherit !important;
+}
+
+select.toolbar-item {
+	margin-right: -17px !important;
+
+	optgroup {
+		background-color: @-; .contrast(@global-background, 5%);
+	}
+
+	option {
+		background-color: @global-background !important;
+	}
+}
+
+// move arrow away from edge
+.toolbar-select-arrow {
+	.glyphs("Images/toolbarButtonGlyphs");
+
+	position: relative !important;
+	right: 10px !important;
+	background-image: none !important;
+	-webkit-mask-position: -20px -96px !important;
+	background-color: @global-arrow !important;
+}
+
+.status-bar-items {
+	border-left: none !important;
+}
+
+/*text color of status bar labels */
+.status-bar label[for=search-replace-trigger],
+#bottom-status-bar-container .type,
+#bottom-status-bar-container .timeline-records-stats,
+.source-frame-cursor-position,
+.search-status-bar-summary .search-message,
+.search-results-status-bar-message {
+	text-shadow: none !important;
+	color: @global-text !important;
+}
+
+/*-- GLYPHS --*/
+button.scripts-step-over .glyph,
+button.scripts-step-into .glyph,
+button.scripts-step-out .glyph,
+.filters-toggle.toggled-active .glyph,
+button.status-bar-item.toggled-on .glyph,
+button.status-bar-item.toggled-on .glyph:not(.shadow),
+button.clear-status-bar-item:active .glyph,
+button.garbage-collect-status-bar-item:active .glyph,
+button.glue-async-status-bar-item:active .glyph,
+.filters-toggle.toggled-shown .glyph,
+
+.toggled-on .long-click-glyph {
+	background-color: @glyph-active !important;
+}
+
+.long-click-glyph {
+	background-color: @glyph-inactive !important;
+}
+
+.toolbar-background button.status-bar-item .glyph,
+.toolbar-background button.status-bar-item .long-click-glyph {
+	background-color: @glyph-inactive !important;
+}
+
+#scripts-debugger-status {
+	color: @global-accent !important;
+}
+
+button.scripts-step-over:disabled .glyph,
+button.scripts-step-into:disabled .glyph,
+button.scripts-step-out:disabled .glyph {
+	background-color: @global-background !important;
+}
+
+.sources-status-bar,
+.panel-status-bar,
+.resources-status-bar .status-bar,
+.overrides-footer {
+	background: @toolbar-sub !important;
+	border-top: 1px solid @global-background !important;
+	color: @global-text !important;
+}
+
+
+//Checkboxes & Labels
+.checkbox-filter-checkbox,
+label.checkbox,
+.checkbox-filter-checkbox-check,
+.filter-checkbox-filter .type,
+#text-filter-regex + label {
+	color: @global-text !important;
+}
+
+.checkbox-filter-checkbox {
+	background: #fff !important;
+}
+
+// adjust selected filter style
+.filter-bitset-filter {
+
+	li {
+		padding: 2px 6px !important;
+		margin: auto 2px !important;
+		border-radius: 8px !important;
+	}
+}
+
+// Move position of dropdown arrow so it doesn't hug right border
+.status-bar-select-arrow {
+	position: relative !important;
+	right: 5px !important;
+}
+
+//adjust event listener checkbox position
+.event-listener-breakpoints .checkbox-elem {
+	top: 0 !important;
+}
+
+// style device buttons
+.save-device-button,
+.remove-device-button {
+	.button-styles();
+}
+
+.resources-toolbar,
+.search-toolbar-summary {
+	background: @toolbar-sub !important;
+	border-top: 1px solid @global-background !important;
+	color: @global-text !important;
+}
+
+.profiles-toolbar {
+	background: @toolbar-sub !important;
+	border-bottom: 1px solid @global-background !important;
+}
+
+#sources-panel-sources-view .sources-toolbar {
+	background: @toolbar-sub !important;
+	border-top: 1px solid @global-background !important;
+	color: @global-text !important;
+}
+
+.status-bar {
+	&:extend(.sources-status-bar);
+}
+
+// pretty much all label text in the status bars
+html .component-root {
+	color: @global-text !important;
+}
+
+// network input filter & timeline filter & dropdown
+.filter-combobox-filter .toolbar-item,
+.filter-input-field {
+	.input-styles();
+}

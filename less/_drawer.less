@@ -1,0 +1,175 @@
+// ==========================================================================
+// Drawer
+// ==========================================================================
+
+.search-drawer-header label.search-config-label,
+.drawer .settings-tab label,
+#drawer-footer td label {
+	text-shadow: none !important;
+	color: @form-label-text !important;
+}
+
+.overrides-view {
+	.tabbed-pane-header-tab {
+		color: @form-label-text !important;
+	}
+
+	.tabbed-pane-content {
+		color: @form-label-text !important;
+
+		:disabled {
+			color: fade(@form-label-text, 30%) !important;
+		}
+	}
+
+	input,
+	select {
+		.input-styles();
+	}
+
+	// add padding to overrides content panel
+	.tabbed-pane-content {
+		padding: 10px;
+	}
+
+	// remove padding from top so menu displays well
+	.tabbed-pane-header {
+		padding-top: 0 !important;
+	}
+}
+
+// Resolution Slider
+input[type="range"]::-webkit-slider-runnable-track {
+	background-image: -webkit-linear-gradient(@tab-color-top, @tab-color-bottom) !important;
+	height: 5px !important;
+	text-align: center !important;
+	margin: 10px 0 !important;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	position: relative !important;
+	top: -5px !important;
+}
+
+// History Tab
+.revision-history-link {
+	color: @global-link !important;
+}
+
+// override readability line height
+.outline-disclosure.revision-history-drawer ol li {
+	padding-top: 2px !important;
+	line-height: 15px !important;
+}
+
+// History
+.tree-outline-dense {
+	> ol > .parent {
+		& { background-color: @- !important; .contrast(@global-background, 3%) };
+		color: @global-text !important;
+		& { border-top: 1px solid @- !important; .contrast(@global-background, 5%) };
+		& { border-bottom: 1px solid @- !important; .contrast(@global-background, 5%, invert) };
+		margin: 0 !important;
+		height: 22px !important;
+
+		+ .children {
+			margin-bottom: 10px !important;
+		}
+	}
+
+	// revision timestamp node
+	.revision-history-revision {
+		color: @global-text !important;
+		& {background-color: @- !important; .contrast(@global-background, 4%) };
+		& {border-top: 1px solid @- !important; .contrast(@global-background, 8%) };
+		& {border-bottom: 1px solid @- !important; .contrast(@global-background, 3%, invert) };
+		height: 22px !important;
+		line-height: 20px !important;
+	}
+
+	.webkit-line-number {
+		background: @cm-gutter !important;
+		border-right: 1px solid @cm-gutter-border !important;
+		padding: 1px 5px 1px 0 !important;
+		display: inline-block;
+		color: @cm-gutter-lines !important;
+	}
+
+	.source-code {
+		margin: 5px 0 15px 10px !important;
+		color: @global-text;
+
+		.revision-history-line-separator:nth-child(1) {
+			background-color: @global-background !important;
+		}
+	}
+
+	.revision-history-line-separator {
+		.contrast(background-color, @global-background, 1%);
+		margin-top: 4px !important;
+	}
+
+	.revision-history-line-removed,
+	.revision-history-line-added {
+		background-color: @global-background !important;
+
+		span:last-child {
+			margin-left: 2px;
+		}
+	}
+
+	.revision-history-line-removed {
+		color: @history-removed-text !important;
+	}
+
+	.revision-history-line-added {
+		color: @history-added-text !important;
+	}
+}
+
+// [Screen] Emulation Tab
+.help-footnote {
+	border-top: none !important;
+
+	a {
+		color: @global-accent;
+	}
+}
+
+button.overrides-swap {
+	.button-styles();
+}
+
+// Change the color of the emulation checkboxes to theme color
+.overrides-activate-device #tab-device .tabbed-pane-header-tab-title::after,
+.overrides-activate-media #tab-media .tabbed-pane-header-tab-title::after,
+.overrides-activate-network #tab-network .tabbed-pane-header-tab-title::after,
+.overrides-activate-sensors #tab-sensors .tabbed-pane-header-tab-title::after {
+	color: @global-accent !important;
+}
+
+// Emulation Tab
+.overrides-device button {
+	.button-styles();
+}
+
+
+// ==========================================================================
+// Network Panel
+// ==========================================================================
+
+.network-config-ua label[is="dt-radio"] {
+	color: @global-label !important;
+}
+
+.network-config-ua input:not(.dt-radio-button) {
+	.input-styles();
+}
+
+// ==========================================================================
+// Sensors Panel
+// ==========================================================================
+
+.sensors-view input[type=text] {
+	.input-styles();
+}

@@ -1,0 +1,55 @@
+.title-section {
+	border-bottom: 1px solid @global-divider !important;
+}
+
+li.security-main-view-sidebar-tree-item {
+	background-color: @- !important; .contrast(@global-background, 5%);
+	border-bottom: @global-divider !important;
+}
+
+.security-main-view-reload-message .tree-element-title {
+	color: @global-text !important;
+}
+
+.security-summary,
+.security-main-view {
+	background-color: @global-background !important;
+	color: @global-text !important;
+}
+
+// Lock Graphic Dividers
+.security-summary-lock-spacer {
+	background: @- !important; .contrast(@global-background, 10%);
+}
+
+// Status Banners
+.security-summary-neutral {
+	.triangle-pointer,
+	.security-summary-text {
+		& { background: @- !important; .contrast(@global-warn, 35%) };
+		& { border-color: @- !important; .contrast(@global-warn, 40%) };
+		color: @global-background !important;
+	}
+}
+
+.security-explanation {
+	background-color: @global-background !important;
+	border-bottom: 1px solid @global-divider !important;
+
+	&-title {
+		color: @global-text !important;
+	}
+}
+
+.security-main-view-reload-message .title {
+	color: @global-label;
+}
+
+// Origins Information
+.security-origin-view {
+	color: @global-text !important;
+
+	.origin-view-section {
+		border-bottom: 1px solid @global-divider !important;
+	}
+}

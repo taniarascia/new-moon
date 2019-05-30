@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Popovers
+   ========================================================================== */
+.vbox.no-pointer-events .widget {
+	min-height: 0 !important;
+	border-width: 0 !important;
+	background: @popover-background !important;
+	box-shadow:
+		0 6px 10px 0 rgba(0, 0, 0, 0.3),
+		0 2px 2px 0 rgba(0, 0, 0, 0.2),
+		0 1px 4px 0 rgba(0, 0, 0, 0.37) !important;
+
+	&.bottom-left-arrow .arrow {
+		-webkit-mask-position: 0 -19px;
+	}
+
+	&.bottom-right-arrow .arrow {
+		-webkit-mask-position: 0 -19px;
+	}
+
+	.object-popover-content {
+		border-radius: 3px !important;
+		color: @global-text !important;
+
+		.object-popover-tree {
+			border-top: 1px solid @popover-tree-border !important;
+		}
+
+		.popover-details-title {
+			color: @popover-details-title !important;
+		}
+
+		.popover-details-row-title {
+			color: @popover-details-row-title !important;
+		}
+
+		.network-timing-bar {
+			background-color: @global-accent !important;
+			border-left-color: @global-accent !important;
+		}
+
+		.network-timing-bar-title {
+			color: @global-text !important;
+			text-shadow: 0 1px 1px lighten(@global-background, 5%);
+		}
+
+	}
+
+	a.undefined {
+		color: @xml-link !important;
+	}
+
+}
+
+.webkit-line-content .text-editor-overlay-highlight {
+	background-color: @selection-background !important;
+	outline: 1px solid @selection-border !important;
+}
+
+// Color Picker
+
+.spectrum-text-value {
+	color: @global-text;
+	background-color: @form-input-background !important;
+	border: 1px solid @form-input-border;
+}
+
+// remove 1st property when two switchers display on popover
+.spectrum-display-switcher,
+.spectrum-switcher {
+	color: @form-button-text !important;
+	background: @form-button-background none !important;
+	border: 1px solid @form-button-border !important;
+
+	&:hover {
+		background: @form-button-background none !important;
+	}
+
+	&:active {
+		box-shadow: @form-button-pressed !important;
+	}
+}
+
+.spectrum-palette {
+	border-top: 1px solid @- !important; .contrast(@popover-background, 5%);
+}
+
+// Animation Editor Popover
+.bezier-icon {
+	background-color: @global-accent !important;
+
+	path {
+		stroke: @global-background !important;
+	}
+}
+
+.bezier-preview-container {
+	background: rgba(0,0,0,0) !important;
+}
+
+.bezier-preview-animation {
+	background-color: @global-accent !important;
+}
+
+.bezier-curve {
+	circle.bezier-control-circle {
+		fill: @global-accent !important;
+	}
+
+	line.bezier-control-line {
+		stroke: @global-accent !important;
+	}
+
+	line.bezier-control-accent {
+		stroke: @global-text !important;
+	}
+
+	line.linear-line {
+		stroke: @- !important; .contrast(@global-background, 15%);
+	}
+
+	path.bezier-path {
+		stroke: #000 !important;
+	}
+}
+
+// Color Swatch Palette Panel
+.palette-panel {
+	background-color: @popover-background !important;
+	border-top: 1px solid @- !important; .contrast(@popover-background, 5%);
+
+	> div:not(.toolbar) {
+		border-bottom: 1px solid @- !important; .contrast(@popover-background, 5%);
+		color: @global-text !important;
+	}
+}
+
+.toolbar {
+	button.toolbar-item:enabled.hover .glyph {
+		background-color: @glyph-inactive !important;
+	}
+
+	button.toolbar-item.toggled-on,
+	button.toolbar-item.toggled-on.hover {
+		.glyph {
+			background-color: @glyph-active !important;
+		}
+	}
+}
+
+.palette-preview:hover {
+	background-color: @- !important; .contrast(@popover-background, 7%);
+}

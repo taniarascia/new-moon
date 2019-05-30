@@ -1,0 +1,493 @@
+// ==========================================================================
+// Sources
+// ==========================================================================
+
+/*placeholder text when no file is open*/
+.tabbed-pane-placeholder {
+	text-shadow: 0 1px 0 @global-textshadow !important;
+	color: @sources-placeholder-text !important;
+}
+
+/*-- Save Problem Overlay --*/
+.source-frame-unsaved-committed-changes {
+	background-color: @sources-save-background !important;
+}
+
+.source-frame-debugger-script {
+	background-color: @global-background !important;
+}
+
+// Debugger Controls Toolbar
+.scripts-debug-toolbar {
+	background: @toolbar-main !important;
+	box-shadow: inset 0 1px 0 @-; .contrast(@toolbar-main,7%);
+	border-bottom: 1px solid @global-background !important;
+}
+
+// Breakpoints
+.breakpoints-list-deactivated {
+	background-color: @- !important; .contrast(@global-background, 5%) !important;
+	opacity: 0.3 !important
+}
+
+.breakpoint-hit {
+	background: @selection-background !important;
+	border-top: 1px solid @selection-border !important;
+	border-bottom: 1px solid @selection-border !important;
+}
+
+.breakpoint-entry {
+	color: @global-text !important;
+
+	&:not(.breakpoint-hit) {
+		border-top: 1px solid @global-divider !important;
+
+		&:hover {
+			background-color: @global-hover !important;
+			border-top: 1px solid @global-divider !important;
+		}
+	}
+
+	.source-text {
+		color: @global-accent !important;
+	}
+}
+
+.breakpoint-list li,
+.list-item:not(.label) {
+	color: @global-text !important;
+	border-top: 1px solid @global-divider !important;
+
+	&:not(.breakpoint-hit):hover {
+		background-color: @global-hover !important;
+		border-top: 1px solid @global-divider !important;
+	}
+
+	.source-text {
+		color: @global-accent !important;
+	}
+}
+
+.breakpoint-hit {
+	background: @selection-background !important;
+	border-top: 1px solid @selection-border !important;
+	border-bottom: 1px solid @selection-border !important;
+}
+
+.sidebar-pane {
+	color: @global-text;
+
+	/* Call Stack */
+	.list-item {
+
+		.title,
+		.subtitle {
+			color: @global-text !important;
+		}
+
+		&:nth-of-type(2n) {
+			background: @- !important; .contrast(@global-background, 3%) !important;
+		}
+
+		&.selected {
+			background: @selection-background !important;
+			color: @- !important; .contrast(@global-text, 10%) !important;
+			border-top: 1px solid @selection-border !important;
+			border-bottom: 1px solid  @selection-border !important;
+
+			.title,
+			.subtitle {
+				color: @- !important; .contrast(@global-text, 10%) !important;
+			}
+		}
+	}
+}
+
+.call-frame-item {
+	background-color: @global-background !important;
+
+	&:not(.async-header) {
+		border-top: 1px solid @global-divider !important;
+	}
+
+	&.async-header .call-frame-item-title {
+		background: @global-background !important;
+
+		.call-frame-title-text {
+			color: @global-warn !important;
+			font-weight: normal !important;
+		}
+
+	}
+
+	.call-frame-item-title {
+		color: @global-text !important;
+	}
+
+	.call-frame-location {
+		color: @global-label !important;
+		background-color: @global-background !important;
+	}
+
+	&.selected {
+		.highlight(selection);
+
+		.call-frame-location {
+			background-color: @global-selected !important;
+			color: @global-text !important;
+		}
+	}
+}
+
+// Paused Breakpoint
+.paused-status {
+	background-color: @toolbar-main !important;
+	color: @global-text !important;
+	border-top: 4px solid @global-divider !important;
+	border-bottom: 4px solid @global-divider !important;
+
+	.status-main {
+		color: @global-warn !important;
+	}
+
+	&.error-reason {
+		color: @global-error !important;
+
+		.status-main {
+			color: @global-error !important;
+		}
+	}
+}
+
+// Blackbox Indicator
+.blackboxed-message {
+	background-color: @toolbar-main !important;
+	color: @global-text !important;
+}
+
+// Sidebar Pane Headers
+.expandable-view-title {
+	color: @global-text !important;
+	background: @toolbar-main !important;
+	& { border-top: 1px solid @- !important; .contrast(@toolbar-main, 5%); }
+	& { border-bottom: 1px solid @- !important; .contrast(@toolbar-main, 5%, invert); }
+
+	&.expanded,
+	&:last-child {
+		border-bottom: 1px solid @toolbar-main !important;
+	}
+}
+
+.sidebar-pane-stack > .sidebar-pane.visible:nth-last-of-type(1){
+	border-bottom: none !important;
+}
+
+.sidebar-pane .children.expanded,
+li.breakpoint-hit .breakpoint-hit-marker {
+	background-color: transparent !important;
+}
+
+// Add Button (Sources Panel)
+// Refresh Button (Watch Expressions Header)
+.pane-title-button.add,
+.sidebar-pane-toolbar > .pane-title-button.refresh {
+	background-color: @glyph-inactive !important;
+}
+
+// Elements Panel Buttons
+.panel.elements .sidebar-pane-toolbar {
+
+	// Color Format Dropdown
+	> select {
+
+		> option,
+		> hr {
+			color: @global-text !important;
+			background-color: @global-background !important;
+		}
+
+		&.select-settings {
+			/*background-image: none !important; */
+			-webkit-background-position: -24px 0 !important;
+			background-color: @glyph-inactive !important;
+			-webkit-mask-repeat: no-repeat !important;
+			-webkit-mask-image: url(Images/paneSettingsButtons.png) !important;
+		}
+
+	}
+
+	.pane-title-button {
+
+		// State Panel Toggle
+		&.element-state {
+			-webkit-mask-image: url(Images/paneElementStateButtons.png) !important;
+		}
+
+		&.animations-controls {
+			-webkit-mask-image: url(Images/paneAnimationsButtons.png) !important;
+		}
+
+		&.animations-controls {
+			background-color: rgba(0,0,0,1) !important;
+		}
+
+		// Add Element Button
+		&.element-state,
+		&.animations-controls,
+		&.add {
+			background-color: @- !important; .contrast(@global-background, 40%);
+		}
+
+
+	}
+}
+
+/* Highlight in Scripts  */
+.webkit-highlighted-line.webkit-line-content {
+	border-radius: 2px;
+}
+
+.webkit-highlighted-line.webkit-line-content * {
+	color: @sources-highlight-text !important;
+}
+
+/*exception icon state colors */
+.scripts-pause-on-exceptions-status-bar-item.toggled-all .glyph {
+	background-color: @sources-exception-all !important;
+}
+
+.scripts-pause-on-exceptions-status-bar-item.toggled-uncaught .glyph {
+	background-color: @sources-exception-uncaught !important;
+}
+
+.webkit-highlighted-line {
+	background-color: @global-accent !important;
+}
+
+//Alternate Buttons
+.alternate-status-bar-buttons-bar {
+
+	.scripts-pause,
+	.scripts-long-resume,
+	.status-bar-item {
+		background-color: @- !important; .contrast(@global-background, 5%) !important;
+		border: 1px solid @global-background !important;
+	}
+
+	.status-bar-item.emulate-active {
+		background-color: @global-background !important;
+		border: 1px solid @global-hover !important;
+	}
+}
+
+
+// Fix event listener breakpoint item style
+.event-listener-breakpoints.properties-tree li {
+	height: auto !important;
+	padding-top: 0 !important;
+
+	&:before {
+		-webkit-mask-position: -4px -93px !important;
+	}
+
+	.checkbox-elem {
+		top: 2px !important;
+	}
+
+	&.parent .checkbox-elem {
+		top: 3px !important;
+	}
+}
+
+.sidebar-pane-button-new-rule {
+	background-color: @- !important; .contrast(@global-background, 40%);
+
+	&:hover {
+		-webkit-mask-position: -23px 0 !important;
+	}
+}
+
+// Highlight currently evaluated context (not sure of what color to use so making it subtle for now)
+.cm-execution-line-tail {
+	background-color: @- !important; .contrast(@selection-background, 10%, invert);
+	border-radius: 2px !important;
+}
+
+// snippet that pops up when stepping into code that shows you values of variables
+.text-editor-value-decoration {
+	& {background-color: @- !important; .contrast(@global-background, 5%)};
+	color: @global-text !important;
+	padding: 0 5px;
+	border-radius: 2px !important;
+	& {box-shadow: 0 1px 0 0 @- !important; .contrast(@global-background, 5%)};
+	& {border-top: 1px solid @- !important; .contrast(@global-background, 2.5%, invert)};
+}
+
+// Notification bar (for mismatch/blackbox notices)
+.infobar {
+	& {border-bottom: 2px solid @- !important; .contrast(@global-background, 10%);}
+	& {background-color: @- !important; .contrast(@global-background, 5%);}
+}
+
+.infobar-info {
+	color: @global-text !important;
+}
+
+.infobar-warning {
+	color: @global-warn !important;
+}
+
+.source-frame-infobar-toggle-link {
+	color: @global-accent !important;
+}
+
+// style hover for watches
+.watch-expression-header:hover {
+	background-color: @global-hover !important;
+}
+
+
+// Watch Panel Hover
+.watch-expression .primitive-value:hover,
+.watch-expression .section .header:hover {
+	.highlight(hover);
+}
+
+// ==========================================================================
+// Sources Sidebar
+// ==========================================================================
+
+.navigator-toolbar {
+	border-bottom: 1px solid @global-divider !important;
+}
+
+// [panel-sources] Hidden stack frames notification (sidebar)
+.hidden-callframes-message {
+	background-color: @- !important; .contrast(@global-background, 5%);
+	text-align: center;
+
+	.link {
+		color: @xml-link !important;
+	}
+}
+
+// Watch Panel
+.watch-expressions {
+	margin-top: 0 !important;
+
+	.name {
+		color: @js-obj-name !important;
+	}
+}
+
+.watch-expression-error {
+	color: @global-error !important;
+}
+
+// not available message
+.error-message {
+	color: @global-error !important;
+}
+
+// ==========================================================================
+// Event Listener Tree
+// ==========================================================================
+.event-listener-tree {
+
+	> li {
+		border-top: none !important;
+	}
+
+	.name {
+		color: @js-obj-name !important;
+	}
+}
+
+// Buttons on panel headers
+.sidebar-pane-toolbar .pane-title-button {
+	background-color: @- !important; .contrast(@glyph-inactive, 50%);
+}
+
+.event-listener-button {
+	.button-styles()
+}
+
+.tree-outline-disclosure .name { color: @js-obj-name !important; }
+
+// ==========================================================================
+// Sources Tree Navigation
+// ==========================================================================
+
+// remove bg from selected menu item
+.tree-outline li {
+	background-color: rgba(0,0,0,0) !important;
+}
+
+// ==========================================================================
+// Sources Info Bar
+// ==========================================================================
+
+.infobar-info {
+	background-color: @toolbar-sub !important;
+	border-bottom: 1px solid @toolbar-divider !important;
+	color: @global-text !important;
+
+	.infobar-toggle {
+		color: @global-link !important;
+	}
+}
+
+// horizontal view watch expression toolbar divider
+.view-container > .toolbar {
+	border-bottom : 1px solid @global-divider !important;
+}
+
+// ==========================================================================
+// Threads
+// ==========================================================================
+.thread-item {
+	color: @global-text !important;
+
+	&:hover {
+		.highlight(hover);
+	}
+
+	&.selected {
+		.highlight(selection);
+
+		&.hover {
+			.highlight(selection);
+		}
+	}
+
+	+ .thread-item {
+		border-top: 1px solid @global-divider !important;
+	}
+}
+
+// ==========================================================================
+// Persistence 2.0 Sources Tab Icons
+// ==========================================================================
+.spritesheet-mediumicons:not(.icon-mask) {
+	&.mediumicon-file-sync,
+  &.mediumicon-file {
+		.glyphs("Images/mediumIcons");
+		background: @tab-label !important;
+
+	}
+
+	&.mediumicon-file {
+		-webkit-mask-position: -0px 32px !important;
+		position: relative;
+	}
+
+	&.mediumicon-file-sync {
+		-webkit-mask-position: -48px 48px !important;
+	}
+}
+
+.selected .spritesheet-mediumicons:not(.icon-mask) {
+	&.mediumicon-file {
+		background: @tab-label-selected !important;
+	}
+}

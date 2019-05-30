@@ -1,0 +1,338 @@
+/**********************************************
+/* DevTool Chrome
+/**********************************************/
+
+// GLOBAL BACKGROUND COLOR
+// elements-panel
+.panel.elements,
+// elements-sidebar
+.styles-pane,
+.metrics,
+// console
+#console-messages,
+// sources
+.tabbed-pane-content,
+ {
+// #console-messages,
+// #console-view,
+// #network-views .CodeMirror-lines,
+// #script-view-fallback,
+// .console-view-wrapper,
+// .dialog .fill,
+// .drawer .revision-history-drawer,
+// .help-window-main,
+// .panel .split-view-contents,
+// .panel,
+// .panel-enabler-view,
+// .profiles-sidebar-tree-box,
+// .resource-view .script-view, // network -> response bg
+// .sidebar-overlay,
+// .split-view-vertical .sidebar-pane.composite .properties-tree,
+// .styles-section.read-only,
+// .tabbed-pane-content,
+// .tabbed-pane-content.has-no-tabs
+// .timeline-records-title,
+// .timeline-records-list,
+// #timeline-overview-sidebar
+	background-color: @global-background !important;
+}
+
+::selection {
+	background: lighten(@global-selected, 44%)
+}
+
+// Panel text
+.panel-enabler-view {
+	color: @global-text;
+}
+
+// Panel Tree Selections
+.panel {
+
+	.sidebar-tree-item {
+
+		&.selected {
+			background-color: @selection-background !important;
+			color: @selection-text !important;
+			box-shadow: inset 0 1px 0 0 @selection-border, inset 0 -1px 0 0 @selection-border;
+		}
+
+		&:not(.selected):hover {
+			background-color: @hover-background !important;
+			color: @hover-text !important;
+			box-shadow: inset 0 1px 0 0 @hover-border, inset 0 -1px 0 0 @hover-border;
+		}
+
+		.disclosure-button {
+			background-color: @global-arrow !important;
+		}
+
+	}
+
+	.data-grid th {
+		border: none !important;
+	}
+
+	.status-bar {
+		border-bottom: 1px solid @tab-color-top;
+	}
+
+	.status-bar-text {
+		color: @global-text !important;
+	}
+}
+
+body.dock-to-right.inactive:not(.undocked):not(.overlay-contents),
+body.dock-to-right:not(.undocked):not(.overlay-contents) {
+	border-left: transparent !important;
+}
+
+.split-view.vbox > .split-view-sidebar.split-view-contents-second:not(.maximized) {
+	border-top: none !important;
+}
+
+// Buttons
+.tabbed-pane-content .settings-tab-text-button {
+	.button-styles();
+}
+
+// Remove border lines
+.split-view.vbox > .split-view-resizer > .split-view-resizer-border,
+.split-view.hbox > .split-view-resizer > .split-view-resizer-border {
+	border: none !important;
+}
+
+// Remove background from sidebars
+.sidebar {
+	background: none !important;
+}
+
+// Editing Dom Nodes or Snippet Filenames
+style + .text-prompt-editing,
+.text-prompt-editing,
+.editing {
+	box-shadow: none !important;
+	background-color: @global-background !important;
+	outline: 1px solid @eh-editing-outline !important;
+	color: @global-text !important;
+}
+
+// Weird edit state where you add an attribute, but delete the text and retype
+.being-edited.editing font {
+	color: @global-text !important;
+}
+
+.elements-tree-editor {
+	box-shadow: none !important;
+}
+
+// Editing Scope values
+.editing-sub-part .text-prompt-editing ::content * {
+	background-color: @global-background !important;
+	color: @global-text !important;
+}
+
+// Tree Directories
+.panel-sidebar {
+	background-color: @global-background !important;
+}
+
+.tree-outline li {
+	&.odd-row + .children li,
+	&.odd-row {
+		background-color: @table-secondary !important;
+	}
+
+	&:hover:not(.selected) .selection {
+		.highlight(hover);
+	}
+
+	&.selected .selection {
+		.highlight(selection);
+	}
+}
+
+
+li.audits-sidebar-results {
+	text-shadow: none !important;
+}
+
+// Don't highlight Request Header Tree
+.request-headers-tree .tree-outline li.selected .selection {
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+
+
+.soft-context-menu {
+	background: @popover-background !important;
+	border: 1px solid @- !important; .contrast(@popover-background, 5%);
+	color: @global-text !important;
+	box-shadow: 0 5px 10px fade(#000, 40%) !important;
+
+
+	.soft-context-menu-item-mouse-over {
+		& { background-color: @- !important; .contrast(@popover-background, 8%); }
+		& { border-top: 1px solid @- !important; .contrast(@popover-background, 10%); }
+		& { border-bottom: 1px solid @- !important; .contrast(@popover-background, 10%); }
+		background-image: none !important;
+		color: @global-text !important;
+	}
+
+	.soft-context-menu-separator > .separator-line {
+		border-bottom: 1px solid @- !important; .contrast(@popover-background, 5%);
+	}
+
+	// Dock options (remove blue hover)
+	.toolbar .toolbar-shadow.blue-on-hover .toolbar-item:not(.toggled-on).hover:enabled {
+		background-color: @global-hover !important;
+
+		.glyph {
+			color: @global-text !important;
+		}
+	}
+}
+
+// Console context dropdown
+.console-context {
+	background-color: transparent !important;
+
+	&.warning .title {
+		color: @global-warn !important;
+	}
+}
+
+.widget .context-list {
+	background: @popover-background !important;
+	border: 1px solid @- !important; .contrast(@popover-background, 5%);
+	color: @global-text !important;
+	box-shadow: 0 5px 10px fade(#000, 40%) !important;
+
+	.context.selected {
+		& { background-color: @- !important; .contrast(@popover-background, 8%); }
+		& { border-top: 1px solid @- !important; .contrast(@popover-background, 10%); }
+		& { border-bottom: 1px solid @- !important; .contrast(@popover-background, 10%); }
+
+		.title {
+			color: @global-text !important;
+		}
+
+		.subtitle {
+			color: @global-label !important;
+		}
+	}
+}
+
+// Tooltips
+.tooltip {
+	background: @- !important; .contrast(@global-background, 3%);
+	border: 1px solid @global-background;
+	color: @global-text !important;
+
+	&-shortcut {
+		color: @global-accent !important;
+	}
+}
+
+// Buttons
+.chrome-select:extend(.chrome-select all) {};
+
+.text-button,
+[is="text-button"] {
+	.button-styles();
+}
+
+ol.children.shadow-root.expanded {
+	border-left: 1px dashed @- !important; .contrast(@global-background, 10%);
+}
+
+// ==========================================================================
+// Forms
+// ==========================================================================
+input.toolbar-item {
+	.input-styles()
+}
+
+label[is="dt-radio"] ::content .dt-radio-button:checked {
+		border: 0 !important;
+		background: url("Images/radioDot.png") center center no-repeat @global-accent !important;
+}
+
+// ==========================================================================
+// 3rd Party Extension
+// ==========================================================================
+
+// React - paint bg white
+.widget[class*="React"] {
+	background: #fff !important;
+}
+
+// Remove text shadow from menus
+.tree-outline {
+	li.security-sidebar-origins,
+	li.profiles-tree-section {
+		text-shadow: none !important;
+	}
+}
+
+
+// ==========================================================================
+// Glyphs
+// ==========================================================================
+
+// Large Icons
+.spritesheet-largeicons:not(.icon-mask) {
+	&.smallicon-file,
+	&.smallicon-file-sync {
+		.glyphs("Images/toolbarButtonGlyphs");
+		-webkit-mask-size: 352px 168px;
+		background: @global-accent !important;
+	}
+}
+
+// persistence file indicator
+.spritesheet-largeicons:not(.icon-mask) {
+	&.smallicon-file,
+	&.smallicon-file-sync {
+		position: relative;
+		top: 2px;
+		background: @tab-label !important;
+	}
+}
+
+.selected .spritesheet-largeicons:not(.icon-mask) {
+	&.smallicon-file,
+	&.smallicon-file-sync {
+		background: @tab-label-selected !important;
+	}
+}
+
+// Small Icons
+// call stack indicator | thread position indicator | inline breakpoint
+.spritesheet-smallicons:not(.icon-mask) {
+	&.smallicon-thick-right-arrow,
+	&.smallicon-inline-breakpoint-conditional {
+		.glyphs("Images/smallIcons");
+		background: @global-accent !important;
+	}
+
+	&.smallicon-checkmark {
+		.glyphs("Images/smallIcons");
+		background: @global-accent !important;
+		-webkit-mask-position: -20px 90px !important;
+	}
+}
+
+.cm-inline-breakpoint {
+	-webkit-mask-position: -60px 90px !important;
+}
+
+// override for disabled inline breakpoints
+.cm-execution-line-tail + .CodeMirror-widget {
+	background-color: transparent !important;
+}
+
+.selected-call-frame-icon,
+.selected-thread-icon {
+	-webkit-mask-position: -80px 50px !important;
+}

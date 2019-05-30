@@ -1,0 +1,177 @@
+// ==========================================================================
+// Application
+// ==========================================================================
+
+// Backgrounds
+.panel.resources .insertion-point-main {
+	.widget,
+	.report-content-box {
+		background-color: @global-background;
+		color: @global-text;
+	}
+
+	.report-header,
+	.report-section {
+		border-bottom: 1px solid @global-divider;
+	}
+
+	.toolbar-render-as-links * {
+		color: @global-link;
+	}
+}
+
+.tree-outline li.storage-group-list-item {
+	border: 1px solid @global-divider;
+	background-color: @- !important; .contrast(@global-background, 5%);
+}
+
+// ==========================================================================
+// Web Sql
+// ==========================================================================
+.database-query-prompt {
+	color: @global-text !important;
+}
+
+.database-user-query {
+	border-top: 1px solid @global-background !important;
+	border-bottom: 1px solid @- !important; .contrast(@global-background, 10%, invert) !important;
+	padding-bottom: 10px !important;
+}
+
+.database-user-query + span {
+	padding: 2px 0 !important;
+	border-top: 1px solid @global-background !important;
+	& { border-bottom: 1px solid @- !important; .contrast(@global-background, 10%, invert) !important };
+	& { background-color: @- !important; .contrast(@global-background, 2%) !important };
+	width: 100% !important;
+}
+
+.database-user-query .database-query-text {
+	color: @global-text !important;
+	width: 100% !important;
+	display: inline-block !important;
+	margin-bottom: 5px;
+	margin-top: 2px;
+}
+
+.database-user-query::before,
+.database-query-result::before{
+	margin-top: -5px !important;
+}
+
+.database-user-query .error {
+	color: @global-error !important;
+}
+
+// ==========================================================================
+// IndexDB
+// ==========================================================================
+
+// info display
+.indexed-db-database-view .header-row {
+	.attribute-name {
+		color: @global-label !important;
+	}
+
+	.attribute-value {
+		color: @global-text !important;
+	}
+}
+
+// header
+.indexed-db-data-view .data-view-toolbar {
+	background-color: @global-toolbar !important;
+	border-bottom: 1px solid @global-divider !important;
+
+	.key-input {
+		.input-styles();
+	}
+}
+
+// remove border from table
+.indexed-db-data-view .data-grid .data-container tr:nth-last-child(2) td {
+border-bottom: none !important;
+}
+
+// ==========================================================================
+// Service Workers
+// ==========================================================================
+.service-workers-settings {
+	border-bottom: none !important;
+	background: @toolbar-main !important;
+	border-bottom: 1px solid @toolbar-divider !important;
+}
+
+.service-workers-versions-mode-tab {
+	background-color: @toolbar-main !important;
+}
+
+.service-workers-versions-mode-tab,
+.service-workers-versions-panel,
+.service-workers-registration-header {
+	border: none !important;
+}
+
+.service-worker-client-focus {
+	color: @global-link !important;
+}
+
+.service-workers-origin-title {
+	color: @global-text !important;
+}
+
+.service-workers-registration {
+	border: 1px solid @global-divider !important;
+	color: @global-text !important;
+}
+
+.service-workers-registration-content {
+	color: @global-text !important;
+}
+
+.service-workers-versions-table-row-title {
+	color: @global-label !important;
+}
+
+.service-workers-versions-table-running-status-inspect {
+	color: @xml-link !important;
+}
+
+.service-workers-versions-mode-tab {
+	&-list {
+		border: none !important;
+	}
+
+	&-selected {
+		background: @selection-background !important;
+	}
+
+	&-disabled {
+		background-color: @toolbar-sub !important;
+	}
+
+	&-text-disabled {
+		color: @- !important; .contrast(@global-text, 30%, invert);
+	}
+}
+
+.service-workers-update-button,
+.service-workers-push-button,
+.service-workers-delete-button,
+.service-workers-start-button,
+.service-workers-stop-button {
+	opacity: 1;
+	background-color: @glyph-inactive;
+
+	&:hover { background-color: @glyph-hover; }
+	&:active { background-color: @glyph-active; }
+}
+
+// ==========================================================================
+// Frames - Fonts
+// ==========================================================================
+
+// paint fonts
+div[style*='font-family'] {
+	color: @global-text !important;
+}

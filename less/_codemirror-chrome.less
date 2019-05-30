@@ -1,0 +1,164 @@
+@-webkit-keyframes source-line-modification-background-fadeout-revised {
+	0% {
+		background-color: @selection-background;
+		outline: 1px solid @selection-border;
+	}
+
+	50% {
+		background-color: @selection-background;
+		outline: 1px solid @selection-border;
+	}
+
+	100% {
+		background-color: @global-background;
+		outline: 1px solid @global-background;
+	}
+}
+
+// line number text
+.CodeMirror-gutter-elt {
+	color: @cm-gutter-lines !important;
+}
+
+// line number bg
+.CodeMirror-gutters {
+	background: @cm-gutter !important;
+	border-right: 2px solid @cm-gutter-border !important;
+}
+
+// dimmed object properties (also on console objects)
+.section .properties .dimmed {
+	opacity: 0.5 !important;
+}
+
+//Codemirror
+// Breakpoint Marker
+.cm-breakpoint .CodeMirror-gutter-elt {
+	background: @global-accent !important;
+	-webkit-border-image: none !important;
+	border: transparent !important;
+	color: #000 !important;
+	font-weight: 700 !important;
+}
+
+// remove invert for dark theme
+.cm-breakpoint .CodeMirror-gutter-wrapper .CodeMirror-linenumber {
+	-webkit-filter: invert(0) !important;
+}
+
+.cm-breakpoint-conditional .CodeMirror-gutter-elt {
+	background: @global-warn !important;
+}
+
+// Edit HTML cursor / Sources Edit cursor
+.CodeMirror-cursor {
+	border-left: 1px solid @cm-cursor !important;
+}
+
+.cm-error {
+	background: @cm-error !important;
+	border-radius: 2px !important;
+	color: #eee !important;
+}
+
+.CodeMirror-selected,
+span.CodeMirror-selectedtext {
+	background: @cm-selected !important;
+}
+
+.CodeMirror-code .CodeMirror-matchingbracket {
+	color: @cm-matching-bracket !important;
+	text-shadow: 0 0 3px @cm-matching-bracket !important;
+	border-bottom: none !important;
+	font-weight: 800 !important;
+}
+
+.CodeMirror-code .CodeMirror-nonmatchingbracket {
+	color: @cm-nonmatching-bracket !important;
+	text-shadow: 0 0 3px @cm-nonmatching-bracket !important;
+	border-bottom: none !important;
+	font-weight: 800 !important;
+}
+
+.cm-search-highlight-start::before {
+	border-color: @global-accent !important;
+}
+
+.cm-search-highlight-end::before {
+	border-color: @global-accent !important;
+}
+
+.cm-search-highlight::before {
+	border-color: @global-accent !important;
+	padding: 2px !important;
+}
+
+.cm-line-with-selection .cm-column-with-selection.cm-search-highlight::before {
+	background-color: @global-accent !important;
+	border-radius: 2px !important;
+}
+
+span.cm-token-highlight {
+	background-color: transparent !important;
+	padding: 0 !important;
+}
+
+span.cm-token-highlight::before {
+	border-color: @global-accent !important;
+}
+
+.cm-line-with-selection span.cm-column-with-selection {
+	color: #000 !important;
+	background-color: @global-accent !important;
+}
+
+.cm-whitespace::before {
+	color: @cm-whitespace !important;
+}
+
+.cm-tab::before {
+	border-bottom: 1px solid @cm-whitespace !important;
+}
+
+.cm-highlight {
+	-webkit-animation: "source-line-modification-background-fadeout-revised" 3s 0s !important;
+	outline: 1px solid @selection-border !important;
+}
+
+.cm-highlight *:not(.CodeMirror-linenumber) {
+	color: @selection-text !important;
+}
+
+.cm-execution-line {
+	background-color: @selection-background !important;
+	outline: 1px solid @selection-border !important;
+}
+
+.CodeMirror-linenumber {
+	border-right: none !important;
+}
+
+.cm-line-without-source-mapping {
+	background-color: @cm-lines-no-sourcemap !important;
+}
+
+// Editing Dom Nodes or Snippet Filenames
+#-blink-dev-tools .editing {
+	background-color: @global-background !important;
+	outline: 1px solid @eh-editing-outline !important;
+	color: @global-text !important;
+}
+
+// Performance Profiling
+.CodeMirror-gutter-performance {
+	background-color: @global-background !important;
+}
+
+.cm-readonly-highlight {
+	background-color: @- !important; .contrast(@global-background, 15%);
+}
+
+// Selection in edit HTML
+.CodeMirror-focused .CodeMirror-selected {
+	background-color: @cm-selected !important;
+}

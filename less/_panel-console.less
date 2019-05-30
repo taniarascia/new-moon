@@ -1,0 +1,180 @@
+// ==========================================================================
+// Console
+// ==========================================================================
+.debug-type(@type, @color) {
+	.console-@{type}-level {
+		.console-message-text,
+		.console-message-url {
+			color: @color !important;
+		}
+
+		.children div:hover * {
+			color: @- !important; .contrast(@color, 5%, invert) !important;
+		}
+
+		.section > .header .title {
+			color: @color !important;
+		}
+
+		.console-message-anchor .devtools-link {
+			color: @color !important;
+		}
+
+		.console-message-text .devtools-link {
+			color: @console-link !important;
+		}
+	}
+
+	label .@{type} {
+		background-color: @color !important;
+	}
+}
+
+// user input
+.console-user-command {
+	border-top: none !important;
+	border-bottom: none !important;
+	width: 100% !important;
+}
+
+#console-messages .console-user-command > .console-message-text {
+	vertical-align: text-top !important;
+}
+
+.console-adjacent-user-command-result {
+	color: @global-text !important;
+	& { background-color: @- !important; .contrast(@global-background, 2%) }
+	& { border-top: 1px solid @- !important; .contrast(@global-background, 3%) }
+	& { border-bottom: 1px solid @- !important; .contrast(@global-background, 2%, invert) }
+}
+
+// results with tree navigation
+.console-message .children li,
+.console-user-command .children li {
+	margin: 1px 0 !important;
+}
+
+// console settings
+.console-settings-pane {
+	background-color: @toolbar-sub !important;
+}
+
+#console-messages {
+	.console-user-command > .console-message-text {
+		color: @console-default-text !important;
+	}
+
+	.debug-type(debug, @filter-debug);
+	.debug-type(log, @filter-log);
+	.debug-type(warning, @filter-warning);
+	.debug-type(error, @filter-error);
+	.debug-type(info, @filter-info);
+	.debug-type(verbose, @filter-verbose);
+
+	// Children Hover
+	.outline-disclosure .stacktrace-entry:hover {
+		background-color: @- !important; .contrast(@global-background, 1%);
+	}
+
+	a {
+		color: @console-link !important;
+
+		&:hover {
+			color: @- !important; .contrast(@console-link, 5%);
+		}
+	}
+
+	// position adjustment of error icon
+	.console-error-level::before {
+		top: 9px !important;
+	}
+}
+
+#console-messages .console-message {
+	color: @console-default-text !important;
+}
+
+//repeated item
+.console-message .bubble {
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.8) !important;
+}
+
+.console-formatted-node:hover {
+	background: fade(@global-hover, 50%) !important;
+}
+
+//text of devices panel
+.vbox.devices {
+	color: @global-text !important;
+
+	a {
+		color: @global-accent;
+	}
+}
+
+// remove white border
+.console-message-wrapper {
+	border-bottom: none !important;
+}
+
+// console error
+.console-error-level {
+	background-color: fade(@filter-error, 5%) !important;
+	border-top: 1px solid fade(@filter-error, 5%) !important;
+	border-bottom: 1px solid fade(@filter-error, 5%) !important;
+
+	// remove 1 border for consecutive errors
+	+ .console-error-level {
+		border-top: none !important;
+	}
+}
+
+.console-warning-level {
+	background-color: fade(@filter-warning, 5%) !important;
+	border-top: 1px solid fade(@filter-warning, 5%) !important;
+	border-bottom: 1px solid fade(@filter-warning, 5%) !important;
+
+	// remove 1 border for consecutive errors
+	+ .console-warning-level {
+		border-top: none !important;
+	}
+}
+
+// js syntax
+.console-object-preview .name { color: @js-obj-name !important; }
+
+// remove top border
+.shadow-split-widget.vbox > .shadow-split-widget-sidebar:not(.maximized) {
+	border-top: none !important;
+}
+
+// Object property name
+.object-properties-section-name,
+.console-view-object-properties-section span {
+	color: @js-obj-array !important;
+}
+
+// ==========================================================================
+// Console Panel - Network Conditions
+// ==========================================================================
+.network-config-title {
+	color: @global-label !important;
+}
+
+.panel-section-separator {
+	background: @global-divider !important;
+}
+
+// ==========================================================================
+// Console Panel - Sensors
+// ==========================================================================
+
+.sensors-group-title,
+.latlong-title,
+.orientation-axis-input-container {
+	color: @global-label;
+}
+
+.sensors-view input {
+	.input-styles();
+}

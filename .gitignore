@@ -1,0 +1,7 @@
+*.DS_Store
+node_modules
+theme-extension/stable.css
+theme-extension/canary.css
+theme-extension.zip
+theme-extension.crx
+theme-extension.pem
