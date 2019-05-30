@@ -1,0 +1,83 @@
+/**********************************************
+/* Profilers
+/**********************************************/
+
+.flame-chart-entry-info,
+#profile-views .data-grid td > div,
+.profile-launcher-view label,
+.retainers-view-header,
+.profile-launcher-view-tree-item,
+.sidebar-tree-section,
+.resources-divider-label,
+.panel:not(.timeline) .sidebar-tree-item,
+.profile-entry-info {
+	color: @global-text !important;
+}
+
+.flame-chart-entry-info,
+.profile-entry-info {
+	text-shadow: 0 0 1px @global-background;
+	background-color: fade(@global-background, 90%) !important;
+	border-radius: 4px;
+}
+
+#profile-views .data-grid button {
+	color: @- !important; .contrast(@global-text, 5%, invert) !important;
+}
+
+.heap-snapshot-view tr:not(.selected) td.object-column span.highlight {
+	background-color: @selection-background !important;
+	border-radius: 3px;
+}
+
+.profiles-status-bar {
+	background: -webkit-linear-gradient(@tab-color-top, @tab-color-bottom) !important;
+	box-shadow: inset 0 1px 0 @- !important; .contrast(@tab-color-top,7%);
+	border-bottom: none !important;
+
+	.status-bar {
+		background-color: transparent !important;
+	}
+}
+
+.profiles-status-bar .status-bar,
+.retainers-view-header,
+.heap-snapshot-view .class-view-toolbar {
+	border-top: none !important;
+	border-bottom: none !important;
+}
+
+input.status-bar-item {
+	background-color: @form-input-background;
+	color: @form-input-text;
+	border: 1px solid @form-input-border;
+
+	&:hover,
+	&:focus {
+		border: 1px solid @form-input-border !important;
+	}
+}
+
+// Retainers resizer bar in heap snapshot
+.heap-snapshot-view .heap-snapshot-view-resizer {
+	background-color: @global-toolbar !important;
+	border-top: 1px solid @global-divider !important;
+	border-bottom: 1px solid @global-divider !important;
+	color: @global-text;
+}
+
+// Heap snapshot table text
+#profile-views .data-container .object-column {
+	color: @global-text;
+
+	button {
+		.button-styles();
+	}
+}
+
+// Canvas snapshot table text color & probably all other grids
+.data-grid td,
+.heap-snapshot-stats-name,
+.heap-snapshot-stats-size {
+	color: @global-text !important;
+}

@@ -1,0 +1,382 @@
+// ==========================================================================
+// Performance
+// ==========================================================================
+
+.timeline-landing-warning {
+	background: @- !important; .contrast(@global-background, 5%);
+	color: @global-text !important;
+}
+
+//timeline status (capture stacks text)
+.timeline .panel-status-bar{
+	color: @global-text !important;
+}
+
+.timeline-category-statusbar-item,
+.timeline-records-stats,
+.record-title,
+.timeline-aggregated-category {
+	text-shadow: none !important;
+	color: @global-text !important;
+}
+
+#timeline-graphs .timeline-graph-side {
+
+	&.hovered {
+		background-color: fade(@global-hover, 50%) !important;
+		outline: 1px solid @- !important; .contrast(@global-hover, 10%);
+	}
+
+	&.selected {
+		background-color: fade(@global-accent, 20%)!important;
+		outline: 1px solid @selection-border !important;
+	}
+}
+
+.timeline-records-list .timeline-tree-item {
+	color: @global-text !important;
+
+	&.hovered:not(.selected) {
+		&:extend(#timeline-graphs .timeline-graph-side.hovered);
+	}
+
+	&.selected {
+		&:extend(#timeline-graphs .timeline-graph-side.selected);
+	}
+
+	.data.dimmed {
+		color: @global-text !important;
+		opacity: .7 !important;
+	}
+}
+
+/* Timeline */
+.sidebar-tree-section {
+	text-shadow: none !important;
+}
+
+.timeline-tree-item.selected .timeline-tree-item-expand-arrow,
+.timeline-tree-item-expand-arrow {
+	background-color: @global-arrow !important;
+}
+
+#counter-values-bar,
+#memory-graphs-container .sidebar-tree-section,
+.timeline-records-title,
+.timeline-details-view-title {
+	background-color: @global-toolbar !important;
+	color: @global-text !important;
+	text-shadow: none !important;
+}
+
+#counter-values-bar {
+	position: relative !important;
+	top: 1px !important;
+	border-bottom: none !important;
+}
+
+.timeline-aggregated-info-legend > div,
+.memory-counter-sidebar-info {
+	color: @global-text !important;
+}
+
+.timeline-details-view-row-title {
+	color: @- !important; .contrast(@global-background, 25%);
+}
+
+.timeline-details-view-title {
+	border-bottom: none !important;
+}
+
+.timeline-details-view-row-value,
+.timeline-details-view-row-stack-trace {
+	color: @global-text !important;
+}
+
+.timeline-details-view-row .timeline-details-view-row-stack-trace .webkit-html-resource-link {
+	color: @xml-link !important;
+}
+
+#timeline-overview-sidebar {
+	padding-right: 0 !important;
+	border-right: 1px solid @global-background !important;
+
+	.sidebar-tree-item {
+		&:hover {
+			border-left: 6px solid @hover-border !important;
+		}
+
+		&.selected {
+			border-left: 6px solid @selection-border !important;
+
+			.icon {
+				background-color: @selection-text !important;
+			}
+
+			.title {
+				color: @selection-text !important;
+			}
+		}
+	}
+
+	.icon {
+		background-color: @- !important; .contrast(@global-text, 10%, invert);
+	}
+
+	.title {
+		color: @- !important; .contrast(@global-text, 10%, invert);
+	}
+
+}
+
+.timeline-curtain-left,
+.timeline-curtain-right {
+	background: hsla(0, 0, 40%, 0.5) !important
+}
+
+.timeline-expandable {
+	border-left: 1px solid @timeline-expandable-border !important;
+}
+
+.timeline-expandable-left{
+	border-top: 1px solid @timeline-expandable-border !important;
+	border-bottom: 1px solid @timeline-expandable-border !important;
+}
+
+.timeline-utilization-strip .timeline-graph-bar {
+	border-color: @timeline-graph-bar !important;
+	background-color: @timeline-graph-bar-background !important;
+}
+
+#timeline-overview-panel {
+	border-bottom: 1px solid @tab-color-top !important;
+}
+
+.timeline .resources-event-divider.timeline-frame-divider,
+.resources-divider {
+	background-color: @timeline-resources-divider !important;
+}
+
+// X axis guide for overview visual
+.panel:not(.network) .resources-dividers-label-bar {
+	background: transparent !important;
+	border-bottom:1px solid @- !important; .contrast(@tab-color-bottom, 10%, invert);
+}
+
+// X axis guide for records || also used in network visualization
+#network-overview-grid,
+#resources-container-content {
+
+	.timeline-grid-header .resources-dividers-label-bar {
+		background: @toolbar-main !important;
+	}
+}
+
+.overview-grid-dividers-background {
+	background-color: red !important;
+}
+
+#timeline-overview-container {
+	canvas {
+		background-color: transparent !important;
+	}
+}
+
+.overview-grid-window-resizer {
+	box-shadow: none !important;
+	border-radius: 2px !important;
+	border: none !important;
+	background: @global-accent !important;
+}
+
+.overview-grid-window-rulers {
+	border-right: 1px solid @timeline-graph-selection;
+	border-left: 1px solid @timeline-graph-selection;
+	background: @timeline-graph-selection !important;
+	opacity: 0.2 !important;
+}
+
+.timeline-frame-strip {
+	color: @global-text !important;
+}
+
+.overview-grid-dividers-background {
+	background-color: @- !important; .contrast(@global-background, 5%);
+}
+
+.overview-grid-window {
+	background-color: @global-background !important;
+}
+
+#memory-counters-graph {
+	border-right: 1px solid @- !important; .contrast(@global-background, 3%);
+}
+
+.timeline-frame-container {
+	background: none !important;
+}
+
+// Timeline recording options labels [Capture memory|stacks]
+#timeline-overview-panel .split-view-sidebar > label {
+	color: @global-text !important;
+}
+
+// label above pie chart
+.timeline-range-summary > div {
+	color: @global-text !important;
+}
+
+// piechart text
+.pie-chart-foreground {
+	color: #222;
+}
+
+// overlay while timeline is collecting events
+.timeline-progress-pane {
+	background-color: @timeline-progress-pane !important;
+	color: @global-text !important;
+}
+
+
+// new timeline ui
+
+// add this to global background
+.timeline-details-view-body {
+	background-color: @global-background !important;
+}
+
+// divider
+.timeline-details-view-row {
+	border-bottom: 1px solid @global-divider !important;
+}
+
+.timeline-details-view-row-value {
+	border-left: none !important;
+	color: @global-text !important;
+}
+
+.timeline-details-view-row-title {
+	color: @global-label !important;
+}
+
+// text
+.timeline-aggregated-info-legend > div, .memory-counter-sidebar-info {
+	color: @global-text !important;
+}
+
+.flame-chart-selected-element {
+	border-color: @global-selected !important;
+	background-color: fade(@global-selected, 60%) !important;
+}
+
+// timeline layers
+.layer-tree.outline-disclosure li,
+.profiler-log-view li {
+	color: @global-text !important;
+}
+
+.timeline-layers-view-properties {
+	table tr{
+		// key
+		td:nth-child(1) {
+			color: @global-label !important;
+		}
+
+		td:nth-child(2) {
+			color: @global-text !important;
+		}
+	}
+
+	td {
+		border: 1px solid @global-divider !important;
+	}
+}
+
+// Memory Section
+#memory-graphs-container > div:last-child {
+	background: @global-background !important;
+}
+
+// layers inside timeline panel
+.timeline-layers-view > div:last-child,
+.timeline-layers-view-properties > div:last-child {
+	background-color: @global-background !important;
+}
+
+// status pane timeline description frame
+.timeline-status-pane {
+	background: @global-background !important;
+	color: @global-text !important
+}
+
+// Network Film Strip
+.network-film-strip {
+	border-bottom: none !important;
+}
+
+// ms header
+#timeline-overview-container .timeline-grid-header {
+	background-color: @global-background !important;
+}
+
+// pie chart bg
+.timeline-details-view-block {
+	border-bottom: 1px solid @global-divider !important;
+	background-color: @global-background !important;
+	box-shadow: none !important;
+}
+
+.timeline-details-chip-title {
+	color: @global-text !important;
+}
+
+// Timeline Recording Overlay
+.timeline.panel .status-pane-container.tinted {
+	background-color: fade(@global-background, 70%) !important;
+
+	.timeline-status-dialog {
+		background-color: @dialog-background !important;
+		border: 1px solid @dialog-border !important;
+		box-shadow: 0 5px 25px 0 @- !important; .contrast(@global-background, 10%, invert);
+		color: @global-text !important;
+
+		.stop-button button {
+			.button-styles();
+		}
+	}
+}
+
+// Memory toolbar
+#memory-graphs-container .memory-counter-selector-swatches {
+	background-color: @toolbar-sub !important;
+	color: @global-text !important;
+	border-bottom: none !important;
+}
+
+#counter-values-bar {
+	border-top: none !important;
+}
+
+.timeline-stack-view-header {
+	background: @toolbar-sub !important;
+	border-bottom: 1px solid @toolbar-divider !important;
+	color: @global-text !important;
+}
+
+.timeline-status-dialog .progress .indicator {
+	background-color: @global-accent !important;
+}
+
+.status-dialog-line .label {
+	color: @global-label !important;
+}
+
+// Performance Tab
+.timeline-landing-page {
+	background-color: @global-background !important;
+	color: @global-text !important;
+}
+
+.timeline-settings-pane {
+	border: 0 !important;
+}

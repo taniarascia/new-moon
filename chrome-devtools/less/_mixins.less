@@ -1,0 +1,91 @@
+// Global Button Styles
+.button-styles() {
+	background: @form-button-background !important;
+	color: @form-button-text !important;
+	border: 1px solid @form-button-border !important;
+	border-radius: 3px !important;
+	cursor: pointer !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+
+	&:disabled {
+		cursor: default !important;
+		opacity: .3 !important
+	}
+
+	&:not(:disabled):active {
+		box-shadow: @form-button-pressed !important;
+		border-color: @- !important; .contrast(@form-button-border, 15%, invert);
+	}
+
+	&.enabled {
+		background-color: @global-accent !important;
+		color: @global-background !important;
+	}
+}
+
+.glyphs(@path) {
+	-webkit-mask-image: -webkit-image-set(
+			url("@{path}.png") 1x,
+			url("@{path}_2x.png") 2x
+		);
+}
+
+.gradient-background() {
+	background-image: -webkit-linear-gradient(@tab-color-top, @tab-color-bottom);
+	color: @global-text !important;
+}
+
+.input-styles() {
+	background-color: @form-input-background !important;
+	border-color: @form-input-border !important;
+	color: @form-input-text !important;
+
+	&:disabled {
+		opacity: .3 !important;
+	}
+
+	&:focus {
+		outline-color: transparent !important;
+	}
+}
+
+.highlight(@type) when (@type = hover) {
+	background-color: @global-hover !important;
+	box-shadow: inset 0 1px 0 0 @hover-border, inset 0 -1px 0 0 @hover-border;
+}
+
+.highlight(@type) when (@type = selection) {
+	background-color: @global-selected !important;
+	box-shadow: inset 0 1px 0 0 @selection-border, inset 0 -1px 0 0 @selection-border;
+}
+
+.contrast(@color, @percent, @invert: false) when (@invert = false) and (@theme-type = dark), (@invert = invert) and (@theme-type = light) {
+	@-: lighten(@color, @percent);
+}
+
+.contrast(@color, @percent, @invert: false) when (@invert = false) and (@theme-type = light), (@invert = invert) and (@theme-type = dark) {
+	@-: darken(@color, @percent);
+}
+
+
+// Navigation Arrows
+.arrow-styles() {
+	.glyphs("Images/treeoutlineTriangles");
+	background-color: @global-arrow !important;
+	background-image: none !important;
+	-webkit-mask-repeat: no-repeat !important;
+	color: rgba(0,0,0,0) !important;
+	opacity: 1 !important;
+	-webkit-mask-size: 32px 24px !important;
+}
+
+.arrow-mixin(@arrow-right: ~'li.parent::before', @arrow-down: ~'li.parent.expanded::before') {
+	@{arrow-right} { -webkit-mask-position: 0 0 !important; }
+	@{arrow-down} { -webkit-mask-position: -16px 0 !important; }
+
+	@{arrow-right},
+	@{arrow-down} {
+		.arrow-styles;
+	}
+}

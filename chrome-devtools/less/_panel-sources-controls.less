@@ -1,0 +1,55 @@
+/**********************************************
+/* Sources Panel Controls
+/**********************************************/
+.scripts-status-bar {
+	background: -webkit-linear-gradient(@tab-color-top, @tab-color-bottom) !important;
+	box-shadow: inset 0 1px 0 @- !important; .contrast(@tab-color-top,7%) !important;
+	border-top: none !important;
+	overflow: hidden !important;
+
+}
+
+// text for rendering tab in drawer
+.help-indent-labels label {
+	color: @global-text !important;
+}
+
+// override for pause exceptions ui module
+// NOTE: once this hits stable, remove the red/yellow styling of pause button
+.scripts-debug-toolbar-drawer {
+	background-color: transparent !important;
+	border-bottom: none !important;
+	color: @global-text !important;
+}
+
+//Warning/Error Bubbles
+.CodeMirror .webkit-html-message-bubble {
+	color: #888 !important;
+	border-radius: 2px !important;
+	padding: 2px !important;
+}
+
+// Edit Breakpoint
+.CodeMirror-linewidget {
+
+	.source-frame-breakpoint-condition {
+		border: 1px solid @- !important; .contrast(@global-background, 30%) !important;
+		border-radius: 4px !important;
+		background-image: -webkit-linear-gradient(@tab-color-top, @tab-color-bottom) !important;
+
+		input {
+			color: @global-text !important;
+		}
+	}
+
+	.source-frame-breakpoint-message {
+		color: @global-accent !important;
+	}
+
+	#source-frame-breakpoint-condition {
+		background-color: @global-background !important;
+		border: none !important;
+		height: 22px !important;
+
+	}
+}

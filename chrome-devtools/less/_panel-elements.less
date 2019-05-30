@@ -1,0 +1,73 @@
+// ==========================================================================
+//  Edit HTML
+// ==========================================================================
+.source-code.elements-tree-editor .CodeMirror {
+	border: 1px solid @- !important; .contrast(@global-background, 5%);
+	border-radius: 5px;
+	box-shadow: inset 0 0 15px 0 rgba(17, 17, 17, 0.6) !important;
+	color: @global-text !important;
+	margin: 10px 0;
+	padding: 10px 0 0 10px !important;
+}
+
+// ==========================================================================
+//  Element Highlighter
+// ==========================================================================
+.elements-disclosure {
+	.arrow-mixin();
+
+	ol:focus li.selected .selection,
+	li.selected .selection {
+		outline: 1px solid @eh-highlight-outline !important;
+		background-color: @eh-highlight-background !important;
+	}
+
+	// "== $0" text after selector
+	.selected-hint {
+		color: @global-text !important;
+	}
+
+	li.hovered:not(.selected) .selection {
+		border-radius: 0 !important;
+		background-color: @eh-hover-background !important;
+		border-top: 1px solid @eh-hover-outline !important;
+		border-bottom: 1px solid @eh-hover-outline !important;
+	}
+}
+
+// cut/copy highlighter
+.in-clipboard .highlight {
+	outline: 1px dashed @eh-clipboard-selection !important;
+}
+
+// ==========================================================================
+// Breadcrumbs
+// ==========================================================================
+#elements-crumbs {
+	background: @toolbar-sub !important;
+	border-top: 1px solid @- !important; .contrast(@global-background, 5%);
+}
+
+.crumbs {
+	color: @crumb-text !important;
+
+	.crumb {
+		border-left: 1px solid @global-divider !important;
+		cursor: pointer;
+
+		&:last-child {
+			border-right: 1px solid @global-divider !important;
+		}
+
+		&:hover {
+			color: @crumb-selected-text !important;
+			background-color: rgba(0, 0, 0, 0) !important;
+		}
+
+		&.selected {
+			background-color: @crumb-selected-background !important;
+			color: @crumb-selected-text !important;
+			cursor: default;
+		}
+	}
+}

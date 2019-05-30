@@ -1,0 +1,86 @@
+// ==========================================================================
+// Toolbars
+// ==========================================================================
+.tabbed-pane-header {
+	background: @toolbar-main !important;
+	border-bottom: 1px solid @global-background !important;
+	border: none;
+
+	.chevron-icon {
+		background-color: @tab-label !important;
+
+		&:hover {
+			background-color: @tab-label-selected !important;
+		}
+	}
+}
+
+.tabbed-pane-header-tab {
+	background: none !important;
+	border: 0 !important;
+	border-top: 2px solid rgba(0, 0, 0, 0) !important;
+	color: @tab-label !important;
+	cursor: pointer !important;
+	margin: 0 !important;
+	margin-bottom: 1px !important;
+
+	&:hover {
+		color: @tab-label-selected !important;
+		background-color: rgba(0, 0, 0, 0) !important;
+	}
+
+	&.selected {
+		background: none !important;
+		border-top: 2px solid @tab-highlighted !important;
+		color: @tab-label-selected !important;
+		font-size: 1em;
+	}
+}
+
+// Glyphs
+.toolbar-button:enabled.hover:not(:active) .toolbar-glyph,
+.toolbar-button.toolbar-state-on .toolbar-glyph {
+	background-color: @global-accent !important;
+}
+
+.toolbar-divider {
+	background-color: @global-divider !important;
+}
+
+// Fix Quick Sources Selected Indicator
+:host-context(#sources-panel-sources-view) .tabbed-pane-header-tab {
+	position: relative;
+	top: 1px;
+}
+
+// drop-down hook when viewport is short
+.tabbed-pane-header-tabs-drop-down-container {
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+// Main Toolbar
+// ==========================================================================
+:host(.insertion-point-main) {
+	.tabbed-pane-header {
+		border-bottom: 1px solid @global-background !important;
+	}
+
+	.tabbed-pane-header-tab,
+	.tabbed-pane-header-tab.selected {
+		border-top: 0 !important;
+	}
+
+	.tabbed-pane-tab-slider {
+		background-color: @tab-highlighted !important;
+		height: 3px !important;
+		bottom: 0 !important;
+		top: 0 !important;
+	}
+}
+
+// Secondary Toolbars
+:host-context(.console-view) {
+	.toolbar-shadow {
+		background-color: @toolbar-sub !important;
+	}
+}

@@ -1,0 +1,46 @@
+// ==========================================================================
+// Element Highlighter
+// ==========================================================================
+
+.show-child-highlighter(@choice) when (@choice = true) {
+	.parent {
+		// highlight children
+		&.selected.expanded + .children,
+		&.hovered.expanded + .children {
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			padding-bottom: 5px !important;
+			box-shadow: inset 0 0 30px 0 @eh-children-shadow;
+			border-color: transparent !important;
+			border-bottom: 1px solid @- !important; .contrast(@global-background, 10%);
+
+			// highlight pseudo elements of selected node
+			> li .webkit-html-pseudo-element:first-child {
+				color: @xml-pseudo-highlighted !important;
+			}
+
+			// fade closing tag of parent
+			> li:last-of-type .webkit-html-tag.close {
+				opacity: 0.5 !important;
+			}
+		}
+	}
+}
+
+.show-child-highlighter(@choice) when (@choice = false) {
+	// intentionally empty
+}
+
+// override child scope indicator line
+li.selected:not(.always-parent) + ol.children {
+	border-color: transparent !important;
+}
+
+li.hovered:not(.always-parent) + ol.children,
+.elements-tree-outline ol.shadow-root,
+li.selected:not(.always-parent) + ol.children {
+	margin-left: 0 !important;
+	border-width: 0 !important;
+	border-left-style: none !important;
+	-webkit-padding-start: 12px !important;
+}

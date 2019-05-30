@@ -1,0 +1,63 @@
+/**********************************************
+/* Scrollbars
+/**********************************************/
+
+.scrollbars() {
+	::-webkit-scrollbar,
+	.CodeMirror-scrollbar-filler,
+	.CodeMirror-gutter-filler {
+		width: @sb-thickness !important;
+		height: @sb-thickness !important;
+		background-color: @global-background !important;
+		-webkit-box-shadow: inset 1px 5px 6px rgba(0, 0, 0, 0.3) !important;
+	}
+
+	::-webkit-scrollbar-track {
+		&:horizontal { -webkit-box-shadow: inset 1px 5px 6px rgba(0, 0, 0, 0.3) !important; }
+		&:vertical { -webkit-box-shadow: inset 4px 1px 8px 1px rgba(0, 0, 0, 0.3) !important; }
+	}
+
+	::-webkit-scrollbar-corner {
+		background: @global-background !important;
+	}
+
+	::-webkit-scrollbar-thumb {
+		border-radius: @sb-thumb-roundness !important;
+		background-color: @sb-thumb-color !important;
+		border: 1px solid @sb-thumb-border !important;
+	}
+
+	/*Popover scrollbar overrides */
+	.custom-popup-horizontal-scroll ::-webkit-scrollbar-track,
+	.custom-popup-vertical-scroll ::-webkit-scrollbar-track {
+		-webkit-box-shadow: none !important;
+		background-image: none !important;
+		&:extend(::-webkit-scrollbar-track all);
+	}
+
+	.custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb {
+		-webkit-border-image: none !important;
+	}
+
+	.custom-popup-vertical-scroll ::-webkit-scrollbar-track-piece:vertical {
+		-webkit-box-shadow: inset 4px 1px 8px 1px rgba(0, 0, 0, 0.3) !important;
+	}
+
+	.custom-popup-horizontal-scroll ::-webkit-scrollbar-track-piece:horizontal {
+		-webkit-box-shadow: inset 1px 5px 6px rgba(0, 0, 0, 0.3) !important;
+	}
+
+	.custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb:horizontal:active,
+	.custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb:horizontal:hover,
+	.custom-popup-vertical-scroll ::-webkit-scrollbar-thumb:vertical:active,
+	.custom-popup-vertical-scroll ::-webkit-scrollbar-thumb:vertical:hover {
+		-webkit-border-image: none !important;
+	}
+
+	.custom-popup-horizontal-scroll ::-webkit-scrollbar,
+	.custom-popup-vertical-scroll ::-webkit-scrollbar {
+		background: none !important;
+	}
+}
+
+.scrollbars();

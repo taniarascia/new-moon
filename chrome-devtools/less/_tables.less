@@ -1,0 +1,69 @@
+/**********************************************/
+/* Tables
+/**********************************************/
+.data-grid {
+	border: 1px solid @- !important; .contrast(@global-background, 5%, invert);
+	background-color: transparent !important;
+	background-image: none !important;
+
+	th,
+	.data {
+		background: none !important;
+		border-left: 1px solid @- !important; .contrast(@global-background, 10%);
+	}
+
+	.header {
+		background: @toolbar-main !important;
+
+		th {
+			color: @global-accent !important;
+		}
+
+		.key-column,
+		.value-column {
+			border: none !important;
+		}
+	}
+
+	td {
+		border-left: 1px solid @- !important; .contrast(@global-background, 2.5%);
+		border-bottom: 1px solid @- !important; .contrast(@global-background, 2.5%);
+	}
+
+	.data-container {
+		a {
+			text-decoration: none;
+			color: @xml-link !important;
+		}
+
+		tr {
+
+			&:nth-child(odd) {
+				background-color: @table-primary !important;
+			}
+
+			&:nth-child(even) {
+				background-color: @table-secondary !important;
+			}
+
+			&:not(.selected):not(.filler):hover{
+				background-color: @global-hover !important;
+				outline: 1px solid @- !important; .contrast(@global-hover, 7%);
+			}
+
+			&.selected {
+				background-color: @selection-background !important;
+				outline: 1px solid @selection-border !important;
+			}
+
+			.editing * {
+				color: #FFF !important;
+				background-color: @global-background !important;
+			}
+		}
+	}
+}
+
+.coverage-toolbar-container {
+	background-color: @toolbar-sub !important;
+}

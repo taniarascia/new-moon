@@ -1,0 +1,20 @@
+// dom update highlighting
+@-webkit-keyframes theme-dom-update-highlight-animation {
+	from {
+		background-color: @global-accent;
+		color: #ccc;
+	}
+	80% {
+		background-color: @global-background;
+		color: inherit;
+	}
+	to {
+		background-color: inherit;
+	}
+}
+
+body .dom-update-highlight {
+	-webkit-animation: theme-dom-update-highlight-animation 1.4s 1 cubic-bezier(0, 0, 0.2, 1) !important;
+	border-radius: 2px !important;
+	background-color: red !important;
+}

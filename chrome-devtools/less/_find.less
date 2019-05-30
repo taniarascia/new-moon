@@ -1,0 +1,193 @@
+// ==========================================================================
+// Find Module [ctrl+shift+F / cmd+shift+F]
+// ========================================================================== */
+
+// filename header
+.search-result {
+	background-color: @find-header-background !important;
+	color: @global-text !important;
+	& { border-top: 1px solid @- !important; .contrast(@find-header-background, 5%) }
+	& { border-bottom: 1px solid @- !important; .contrast(@find-header-background, 5%, invert) }
+	line-height: 18px !important;
+	margin: 0 !important;
+}
+
+// link to show more matches found in file
+.show-more-matches {
+	color: @global-accent !important;
+}
+
+.parent {
+
+	// filepath/name //
+	.search-result-file-name {
+		color: @find-header-text !important;
+	}
+
+	// count after filepath
+	.search-result-matches-count {
+		color: @- !important; .contrast(@global-accent, 5%, invert);
+	}
+}
+
+// ==========================================================================
+// Drawer Find
+// ========================================================================== */
+
+// input textbox
+.search-config-search {
+	&:focus {
+		outline: none !important;
+	}
+
+	background-color: @form-input-background !important;
+	color: @form-input-text !important;
+	border: 1px solid @form-input-border !important;
+}
+
+// [global] highlighted search input
+:host-context(#-blink-dev-tools) li.search-match .highlighted-match,
+.highlighted-search-result,
+.webkit-highlighted-line.webkit-line-content {
+	color: @find-highlight-text !important;
+	border-radius: 2px !important;
+	font-size: 1em !important;
+	background-color: @find-highlight-background !important;
+	box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 4px 0px !important;
+}
+
+// ==========================================================================
+// Sources Find
+// ========================================================================== */
+
+// buttons (i.e. cancel)
+.search-action-button {
+	.button-styles();
+}
+
+.toolbar-search-control {
+	background-color: @form-input-background !important;
+	border: 1px solid @form-input-border !important;
+
+	// input textbox
+	input {
+		.input-styles();
+		border-color: transparent !important;
+	}
+
+	// Prev/Next Buttons
+	// ========================================================================== */
+	.toolbar-search-navigation-controls {
+		background-image: linear-gradient(@tab-color-top,@tab-color-bottom) !important;
+	}
+
+	.toolbar-search-navigation.toolbar-search-navigation {
+		&-prev,
+		&-next {
+			border: 1px solid @tab-color-bottom !important;
+			-webkit-filter: invert(0) !important;
+		}
+	}
+}
+
+// search/replace input textbox
+.search-replace.toolbar-replace-control {
+	.input-styles();
+}
+
+// Find Module inside file in sources panel
+.search-bar {
+	background-color: @- !important; .contrast(@global-background, 15%);
+	border-top: none !important;
+	border-bottom: none !important;
+}
+
+// "# of #" inside find input
+.search-results-matches {
+	color: @global-text !important;
+}
+
+// ==========================================================================
+// Glyphs
+// ==========================================================================
+
+// Button text in sources
+.regex-search-toolbar-item.toggled-on .toolbar-button-text,
+.case-sensitive-search-toolbar-item.toggled-on .toolbar-button-text {
+	color: @glyph-active !important;
+}
+
+// ==========================================================================
+// Global Find
+// ==========================================================================
+// Gutter w/ line numbers
+search-match-line-number {
+	background: @cm-gutter !important;
+	border-right: 1px solid @cm-gutter-border !important;
+	padding: 1px 5px 1px 0 !important;
+	display: inline-block;
+	color: @cm-gutter-lines !important;
+}
+
+li.search-match .highlighted-match  {
+	color: @find-highlight-text !important;
+	border-radius: 2px !important;
+	font-size: 1em !important;
+	background-color: @find-highlight-background !important;
+	box-shadow: rgba(0, 0, 0, 0.498039) 3px 3px 4px 0px !important;
+}
+
+// hover over line in global find
+li.search-match:hover {
+	.highlight(hover) !important;
+}
+
+// text color of find contents
+search-match-content {
+	color: @global-text !important;
+}
+
+// filename header
+.search-result {
+	background-color: @find-header-background !important;
+	color: @global-text !important;
+	& { border-top: 1px solid @- !important; .contrast(@find-header-background, 5%) };
+	& { border-bottom: 1px solid @- !important; .contrast(@find-header-background, 5%, invert) };
+	line-height: 18px !important;
+	margin: 0 !important;
+}
+
+// link to show more matches found in file
+.show-more-matches {
+	color: @global-accent !important;
+}
+
+.parent {
+
+
+	// filepath/name //
+	.search-result-file-name {
+		color: @find-header-text !important;
+	}
+
+	// count after filepath
+	.search-result-matches-count {
+		color: @- !important; .contrast(@global-accent, 5%, invert);
+	}
+}
+
+.toolbar-search {
+	width: 100%;
+
+	td {
+		width: 100%;
+	}
+
+	button.search-action-button {
+		width: 75px;
+	}
+}
+
+.toolbar-search-control {
+	width: 100%;
+}

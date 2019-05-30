@@ -1,0 +1,58 @@
+/**********************************************
+/* Screencast
+/**********************************************/
+
+.screencast {
+	background-color: @global-background !important;
+
+
+	.screencast-viewport {
+		background-color: @screencast-viewport;
+		box-shadow: 0 0 2px 0 @screencast-viewport-border;
+		margin: auto !important;
+	}
+
+	.screencast-navigation {
+
+		button {
+			.glyphs("Images/navigationControls");
+			background-color: @glyph-active !important;
+			background-image: none !important;
+			border: none !important;
+			width: 21px !important;
+			height: 21px !important;
+			cursor: pointer !important;
+
+			&.back {
+				-webkit-mask-position: 0 2px;
+			}
+
+			&.forward {
+				-webkit-mask-position: -17px 2px;
+			}
+
+			&.reload {
+				-webkit-mask-position: -36px 2px;
+			}
+
+			&[disabled] {
+				background-color: @glyph-inactive !important;
+				opacity: 1 !important;
+				cursor: default !important;
+			}
+		}
+
+		.progress {
+			background-color: @global-accent !important;
+		}
+
+		input {
+			background: @form-input-background !important;
+			color: @form-input-text !important;
+			border: 1px solid @form-input-border !important;
+		}
+
+	}
+
+
+}

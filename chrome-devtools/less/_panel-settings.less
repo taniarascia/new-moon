@@ -1,0 +1,476 @@
+// ==========================================================================
+// Settings
+// ==========================================================================
+
+.settings-window-title {
+	color: @global-text !important;
+}
+
+.help-window-main {
+	background-color: @global-background;
+	color: @global-text !important;
+	&.widget {
+		border: none !important;
+	}
+
+	.settings-tab-container header {
+		border-bottom: 1px solid @- !important; .contrast(@global-background, 30%) !important;
+	}
+
+	.help-footnote {
+		border-top: 1px solid @- !important; .contrast(@global-background, 30%) !important;
+	}
+
+	label,
+	label:hover {
+		color: @form-label-text !important;
+	}
+
+	.tabbed-pane-header-tab.selected {
+		color: @global-accent !important;
+	}
+
+	.help-section-title {
+		color: @global-accent !important;
+	}
+
+	.help-block {
+
+		label,
+		td {
+			color: @form-label-text !important;
+		}
+
+	}
+
+	select,
+	input,
+	option {
+		.input-styles();
+	}
+
+	select.chrome-select {
+		box-shadow: none !important;
+		text-shadow: none !important;
+		background-image: -webkit-image-set(
+			url(Images/chromeSelect.png) 1x,
+			url(Images/chromeSelect_2x.png) 2x),
+			linear-gradient(@global-background, @global-background);
+
+	}
+
+	//disabled styles
+	fieldset:disabled label {
+		color: fade(@form-label-text, 30%) !important;
+	}
+
+	select:disabled,
+	input:disabled,
+	.settings-tab-text-button:disabled {
+		background-image: none !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	//keyboard shortcuts display
+	.help-key-cell {
+
+		.help-key {
+			color: @global-text !important;
+			background: @- !important; .contrast(@global-background, 5%);
+		  box-shadow: none !important;
+		  text-shadow: none !important;
+		}
+	}
+
+	/***************************************************
+	/* Workspaces Dialog Box
+	****************************************************/
+
+	// Headers
+	.settings-dialog {
+		.block-header {
+			color: @global-label !important;
+		}
+	}
+
+	.settings-info-message {
+		background-color: lighten(@global-background, 5%) !important;
+		color: @global-text !important;
+	}
+
+	.settings-list-container {
+		background-color: @settings-folder-background !important;
+	}
+
+	.settings-list {
+		border: none !important;
+	}
+
+	.contents {
+		border: 1px solid @- !important; .contrast(@global-background, 3%);
+		padding: 10px !important;
+		border-radius: 4px !important;
+	}
+
+	// Remove the border off the first child after the input
+	.settings-list-item.add-list-item + .settings-list-item {
+		border-top: none !important;
+	}
+
+	.settings-list-item {
+		background-color: @global-background !important;
+		border-top: 1px solid @global-divider !important;
+
+		&:hover {
+			background-color: @global-background !important;
+			border-top: 1px solid @global-divider !important;
+		}
+
+		&.selected {
+			background-color: @global-background !important;
+		}
+
+		&:nth-child(1) {
+			border-top: none !important;
+		}
+
+		&:last-child{
+			border-bottom: none !important;
+		}
+	}
+
+	.file-system-path-name {
+		color: @global-accent !important;
+	}
+}
+
+.file-system-path,
+.list-column-text,
+.settings-list-column-path {
+	color: @global-text !important;
+}
+
+// workspace edit input boxes
+.list-column-editor {
+	background-color: @form-input-background !important;
+	border: 1px solid @form-input-border !important;
+	color: @form-input-text !important;
+}
+
+// Make swatch size 12px again.
+.swatch {
+	width: 12px !important;
+	height: 12px !important;
+}
+
+// Framework blackbox patterns
+.blackbox-dialog .columns-header {
+	color: @global-accent !important;
+}
+
+
+// Devices
+//==========================================================================
+
+.devices-list {
+	border: 1px solid @- !important; .contrast(@global-background, 5%);
+}
+
+.devices-title {
+	color: @global-accent !important;
+}
+
+input[type="text"] {
+	.input-styles();
+}
+
+.devices-list-item {
+	color: @global-text;
+
+	&:hover {
+		background: @hover-background !important;
+		border-top: 1px solid @hover-border !important;
+		border-bottom: 1px solid  @hover-border !important;
+	}
+
+	.devices-list-title {
+		opacity: 0.5 !important;
+		color: @global-text !important;
+	}
+
+	.devices-list-checkbox:checked + .devices-list-title {
+		opacity: 1 !important;
+	}
+}
+
+.devices-edit-container {
+	background: @- !important; .contrast(@global-background, 5%);
+}
+
+.devices-custom-separator {
+	& { border-top: 1px solid @- !important; .contrast(@global-background, 5%, invert) };
+	& { border-bottom: 1px solid @- !important; .contrast(@global-background, 5%); }
+}
+
+.devices-list-edit,
+.devices-list-remove {
+	.glyphs("Images/toolbarButtonGlyphs");
+
+	background-color: @global-accent !important;
+	background-image: none !important
+}
+
+.devices-list-edit {
+	-webkit-mask-position: -224px -72px;
+}
+
+.devices-list-remove {
+	-webkit-mask-position: -128px -24px;
+}
+
+// vertical navbars
+.vertical-tab-layout {
+	// change selected style from top border to left border
+	.tabbed-pane-header-tab {
+		padding-left: 20px !important;
+		border-top: none !important;
+		color: @global-text !important;
+
+		&.selected {
+			border-top: none !important;
+			border-left: 7px solid @global-accent !important;
+			padding-left: 13px !important;
+		}
+	}
+}
+
+// Settings Sidebar
+.help-window-main {
+	//remove bg normally for horizontal pane header
+	.tabbed-pane-header {
+		background-image: none !important;
+		box-shadow: none !important;
+	}
+
+	.tabbed-pane-header-contents {
+		box-shadow: none !important;
+	}
+}
+
+// Hidden Experiments (Shift 6x on Experiments Menu)
+.settings-experiment-hidden {
+	label {
+		background-color: @global-background !important;
+
+		.dt-checkbox-text {
+			color: @global-accent !important;
+		}
+	}
+}
+
+.list {
+	border: 1px solid @global-divider !important;
+	border-radius: 2px !important;
+}
+
+.list-item:hover {
+	.highlight(hover);
+
+	.controls-gradient {
+		background-image: none !important;
+	}
+
+	.controls-buttons {
+		.highlight(hover);
+	}
+
+	.edit-button,
+	.remove-button {
+		.glyphs("Images/toolbarButtonGlyphs");
+
+		background-image: none !important;
+		background-color: @global-accent !important;
+	}
+
+	.edit-button {
+		-webkit-mask-position: -224px -72px !important;
+	}
+
+	.remove-button {
+		-webkit-mask-position: -128px -24px !important;
+	}
+}
+
+
+// Settings Global Styles
+button {
+	.button-styles();
+}
+
+// Edit Mode
+.editor-container {
+	background: @global-hover !important;
+}
+
+.blackbox-pattern,
+.file-system-value {
+	color: @global-text !important;
+
+	input {
+		.input-styles();
+		border: 1px solid @form-input-border;
+		background-color: @global-background !important;
+		border-radius: 2px;
+		padding: 4px;
+	}
+}
+
+.chrome-select {
+	.input-styles();
+	background-image: none !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
+	padding-right: 0;
+}
+
+// Throttling
+//==========================================================================
+
+.conditions {
+	&-list {
+		border: 1px solid @- !important; .contrast(@global-background, 5%);
+
+		.custom-separator {
+			& { border-top: 1px solid @- !important; .contrast(@global-background, 5%, invert) };
+			& { border-bottom: 1px solid @- !important; .contrast(@global-background, 5%); }
+		}
+
+		&-separator {
+			& { border-right: 1px solid @- !important; .contrast(@global-background, 5%); }
+		}
+	}
+
+	&-list-item:hover {
+		background: @hover-background !important;
+		border-top: 1px solid @hover-border !important;
+		border-bottom: 1px solid  @hover-border !important;
+	}
+
+	&-list-text {
+		color: @global-text !important;
+	}
+
+	&-edit-container {
+		background: @- !important; .contrast(@global-background, 5%);
+		border-top: none !important;
+	}
+
+	&-list-edit,
+	&-list-remove {
+		.glyphs("Images/toolbarButtonGlyphs.png");
+		background-color: @global-accent !important;
+		background-image: none !important
+	}
+
+	&-list-edit {
+		-webkit-mask-position: -224px -72px;
+	}
+
+	&-list-remove {
+		-webkit-mask-position: -128px -24px;
+	}
+
+	input[type="text"],
+	.editor-content input.error-input {
+		.input-styles()
+	}
+
+
+}
+
+// Workspaces
+//==========================================================================
+.settings-tab {
+
+	.file-system-container {
+		border-left: none !important;
+		padding: 10px !important;
+	}
+
+	.file-system-name {
+		color: @global-accent !important;
+	}
+
+	button {
+		.button-styles();
+	}
+
+
+	.file-system-list {
+		.file-system-separator {
+			background-color: @global-divider !important;
+		}
+	}
+}
+
+// ==========================================================================
+// Settings sections uses different selectors for the same styles. Hope they
+// consolidate it soon.
+// ==========================================================================
+
+// Blackbox
+//==========================================================================
+.help-window-main .header {
+	border-bottom: 1px solid @global-divider !important;
+}
+
+.blackbox-separator {
+	background-color: @global-divider !important;
+}
+
+// Conditions
+//==========================================================================
+.conditions-list-text {
+	color: @global-text !important;
+
+	input {
+		.input-styles();
+		border: 1px solid @form-input-border;
+		background-color: @global-background !important;
+		border-radius: 2px;
+		padding: 4px;
+	}
+}
+
+.list-separator,
+.conditions-list-separator {
+	background-color: @global-divider !important;
+}
+
+// Padding is different in canary (update padding setting on stable L252 in settings.less)
+.vertical-tab-layout .tabbed-pane-header-tab.selected {
+	padding-left: 19px !important;
+}
+
+// ==========================================================================
+// Dialog
+// ========================================================================== */
+
+.filtered-item-list-dialog {
+	background: @dialog-background !important;
+	box-shadow: 0 5px 15px 5px rgba(0,0,0,.6) !important;
+	border: 1px solid @dialog-border !important;
+
+	> input[type=text] {
+		background-color: @dialog-item-background !important;
+		box-shadow: inset 0 1px 5px 0 rgba(0,0,0,.3) !important;
+		color: @- !important; .contrast(@dialog-item-text, 10%);
+	}
+}
+
+// Clean up dialog border (not confident about this selector)
+.vbox.flex-auto {
+	border: none !important;
+	box-shadow: 0 5px 10px fade(#000, 40%) !important;
+}

@@ -1,0 +1,231 @@
+// ==========================================================================
+// Global Syntax
+// ==========================================================================
+
+// All code text that doesn't have a specific class
+.CodeMirror-code {
+	color: @global-text;
+}
+
+// ==========================================================================
+//  Syntax For Sources Panel
+// ==========================================================================
+
+// Javascript
+// ==========================================================================
+.cm-js-atom { color: @js-atom !important; }
+.cm-js-attribute { color: @js-attribute !important; }
+.cm-js-builtin { color: @js-builtin !important; }
+
+.cm-js-comment {
+	color: @js-comment !important;
+	font-style: italic;
+}
+
+.cm-js-def { color: @js-def !important; }
+
+.cm-js-error {
+	background: @js-error !important;
+	color: @global-text !important;
+}
+
+.cm-js-header { color: @js-header !important; }
+.cm-js-hr { color: @js-hr !important; }
+
+.cm-js-keyword {
+	color: @js-keyword !important;
+	font-style: italic;
+}
+
+.cm-js-link { color: @js-link !important; }
+.cm-js-meta { color: @js-meta !important; }
+.cm-js-number { color: @js-number !important; }
+.cm-js-operator { color: @js-operator !important; }
+.cm-js-property { color: @js-property !important; }
+.cm-js-string { color: @js-string !important; }
+.cm-js-string-2 { color: @js-obj-regexp !important; }
+.cm-js-tag { color: @js-property !important; }
+.cm-js-variable { color: @js-variable !important; }
+.cm-js-variable-2 { color: @js-variable-2 !important; }
+
+// overqualify because devtools authors are using !important
+.CodeMirror {
+	.cm-js-string { color: @js-string !important; }
+	.cm-js-string-2 { color: @js-obj-regexp !important; }
+
+	.cm-js-comment {
+		color: @js-comment !important;
+		font-style: italic;
+	}
+}
+
+.source-frame-eval-expression {
+	background-color: @selection-background !important;
+	border-color: @selection-border !important;
+}
+
+// Coffeescript
+// ==========================================================================
+.cm-atom { .cm-js-atom }
+.cm-comment { .cm-js-comment }
+.cm-variable { .cm-js-variable }
+.cm-string { .cm-js-string }
+.cm-keyword { .cm-js-keyword }
+.cm-number { .cm-js-number }
+.cm-operator { .cm-js-operator }
+.cm-error { .cm-js-error }
+.cm-s-default .cm-property { .cm-js-variable }
+
+// CSS
+// ==========================================================================
+
+.cm-css-atom { color: @css-atom !important; }
+.cm-css-builtin { color: @css-builtin !important; }
+.cm-css-def { color: @css-def !important; }
+
+.cm-css-comment {
+	color: @css-comment !important;
+	font-style: italic;
+}
+
+.cm-css-meta { color: @css-meta !important; }
+.cm-css-number { color: @css-number !important; }
+.cm-css-operator { color: @css-operator !important; }
+.cm-css-property { color: @css-property !important; }
+.cm-css-qualifier { color: @css-qualifier !important; }
+.cm-css-string { color: @css-string !important; }
+.cm-css-string-2 { color: @css-string-2 !important; }
+.cm-css-tag { color: @css-tag !important; }
+.cm-css-variable { color: @css-variable !important; }
+.cm-css-variable-2 { color: @css-variable-2 !important; }
+
+.webkit-css-selector { color: @css-def !important; }
+.webkit-css-at-rule { color: @css-at-rule !important; }
+.webkit-css-color { color: @css-def !important; }
+.webkit-css-comment { color: @css-comment !important; }
+.webkit-css-important { color: @css-important !important; }
+.webkit-css-keyword { color: @css-def !important; }
+.webkit-css-number { color: @css-number !important; }
+.webkit-css-property { color: @css-property !important; }
+.webkit-css-string { color: @css-string !important; }
+.webkit-css-url { color: @xml-link !important; }
+
+// overqualify because devtools authors are using !important
+.CodeMirror {
+	.cm-css-comment {
+		color: @css-comment !important;
+		font-style: italic;
+	}
+
+	.cm-css-string { color: @css-string !important; }
+}
+
+// HTML
+// ==========================================================================
+
+.cm-xml-comment {
+	color: @xml-comment !important;
+	font-style: italic !important;
+}
+
+.cm-xml-error { color: @xml-error !important; }
+.cm-xml-string { color: @xml-string !important; }
+.cm-xml-tag { color: @xml-tag !important; }
+.cm-xml-attribute { color: @xml-attribute !important; }
+.cm-xml-link { color: @xml-link !important; }
+
+.webkit-html-attribute-name { color: @xml-attribute !important;}
+.webkit-html-attribute-value { color: @xml-string !important;}
+.webkit-html-comment {
+	color: @xml-comment !important;
+	font-style:italic;
+}
+
+.webkit-html-tag {
+	color: @xml-bracket !important;
+}
+
+.webkit-html-tag-name,
+.webkit-html-close-tag-name {
+	color: @xml-tag !important;
+}
+
+.webkit-html-text-node,
+.webkit-html-css-node,
+.webkit-html-js-node {
+	color: @xml-js-node !important;
+}
+
+.webkit-html-pseudo-element { color: @xml-pseudo !important; }
+.webkit-html-fragment { color: @xml-shadow-root !important; }
+.highlight { color: @xml-iframe-root !important; }
+
+// ==========================================================================
+// Syntax for Elements Panel & Console
+// ==========================================================================
+.popover .parent + .children.expanded,
+#console-messages .parent + .children.expanded,
+.sidebar-pane .parent:not(.event-category) + .children.expanded {
+	border-left: 1px dashed fade(@global-text, 20%) !important;
+	position: relative;
+	left: 4.4px;
+}
+
+// Overqualify selector because devtools is using !important
+.monospace,
+.CodeMirror-line {
+	.object-value-string { color: @js-obj-string !important; }
+	.object-value-regexp { color: @js-obj-regexp !important; }
+	.cm-xml-comment { color: @xml-comment !important; }
+	.cm-xml-string { color: @xml-string !important; }
+}
+
+// Console syntax overrides
+#console-messages {
+	.cm-js-string { color: @js-string !important; }
+	.cm-js-string-2 { color: @js-obj-regexp !important; }
+	.object-value-function-prefix { color: @js-obj-function !important; }
+}
+
+.webkit-html-external-link,
+.webkit-html-resource-link {
+	color: @global-link !important;
+}
+
+.object-value-function-prefix { color: @js-obj-function !important; }
+.function-name { color: @js-obj-function !important; }
+
+// Request Header js objects
+
+
+.object-value-array,
+.object-value-generator,
+.object-value-iterator,
+.object-value-map,
+.object-value-node,
+.object-value-set {
+	color: @js-obj-array !important;
+}
+
+.object-properties-section .name { color: @js-obj-name !important; }
+.object-properties-section .number { color: @js-obj-number !important; }
+.object-properties-section-separator { color: @global-text !important; }
+.object-value-boolean { color: @js-obj-boolean !important; }
+.object-value-calculate-value-button { color: @js-obj-array !important; }
+.object-value-error { color: @global-error !important; }
+.object-value-function { color: @js-obj-function !important; }
+.object-value-function::before { color: @global-text !important; }
+.object-value-null { color: @js-obj-array !important; }
+.object-value-number { color: @js-obj-number !important; }
+.object-value-object { color: @js-obj-array !important; }
+.object-value-regexp { color: @js-obj-regexp !important; }
+.object-value-string { color: @js-obj-string !important; }
+.object-value-string-quote { color: @js-obj-string !important; }
+.object-value-symbol { color: @js-obj-regexp !important; }
+
+
+
+// GOOD
+.devtools-link {
+	color: @global-link !important;
+}

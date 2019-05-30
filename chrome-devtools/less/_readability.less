@@ -1,0 +1,20 @@
+/**********************************************
+/* Readability
+/* -------------------------------------------
+/* Adjust the line height for elements|sources
+/* tab, find, and console.  Adjust margin-top
+/* to line up expand/collapse arrow in
+/* elements panel
+/**********************************************/
+
+.text-editor .inner-container .webkit-line-content,
+.text-editor-lines .inner-container .webkit-line-number,
+.styles-section .properties li,
+.CodeMirror-lines,
+#search-results-pane-file-based .search-match{
+	line-height: @text-height !important;
+}
+
+.panel.elements .outline-disclosure li.parent::before{
+	margin-top: 1px;
+}

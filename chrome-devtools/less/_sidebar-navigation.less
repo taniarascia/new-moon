@@ -1,0 +1,86 @@
+/**********************************************
+/* Resources & Sources Sidebar
+/**********************************************/
+
+.panel:not(.elements):not(.console) {
+
+	.base-storage-tree-element-title,
+	.base-storage-tree-element-subtitle,
+	.base-navigator-tree-element-title {
+		color: @global-text !important;
+		top: 0 !important;
+	}
+
+	/*-- currently selected element --*/
+	.selected {
+		.base-storage-tree-element-title,
+		.base-storage-tree-element-subtitle,
+		.base-navigator-tree-element-title {
+			color: @selection-text !important;
+			text-shadow: none !important;
+		}
+	}
+
+	.sidebar li {
+		color: @global-text !important;
+	}
+
+	.outline-disclosure {
+
+		li.selected .selection {
+			background: @selection-background !important;
+			color: @selection-text !important;
+			border-top: 1px solid  @selection-border !important;
+			border-bottom: 1px solid  @selection-border !important;
+			margin-top: -1px !important;
+		}
+
+		li:hover:not(.selected) .selection,
+		li.hovered:not(.selected) .selection  {
+			display: block !important;
+			background: @hover-background !important;
+			border-top: 1px solid @hover-border !important;
+			border-bottom: 1px solid @hover-border !important;
+			margin-top: -1px !important;
+			height: 18px !important;
+			border-radius: 0 !important;
+		}
+
+		ol:focus li.selected .selection {
+			background: @selection-background !important;
+			color: @selection-text !important;
+			border-top: 1px solid  @selection-border !important;
+			border-bottom: 1px solid  @selection-border !important;
+			margin-top: -1px !important;
+			text-shadow: none !important;
+		}
+
+	}
+
+	.sidebar-overlay {
+		border-right: 1px solid lighten(@global-background, 3%) !important;
+		box-shadow: rgb(20,20,20) 5px 0px 22px 3px !important;
+	}
+
+} //panel
+
+.sidebar li.selected .selection {
+	background-image: none !important;
+	border: none !important;
+}
+
+
+// XHR label text
+.sidebar-pane .breakpoint-condition {
+	color: @global-label !important;
+}
+
+.resource-tree-item.selected .icon,
+.force-white-icons [is="ui-icon"].spritesheet-largeicons {
+	background-color: @global-accent !important;
+}
+
+// override setting that makes text black
+ol.tree-outline li.selected:focus *  {
+	color: @global-text !important;
+}

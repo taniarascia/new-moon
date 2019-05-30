@@ -1,0 +1,248 @@
+//************************************************************************/
+/* New Moon by Tania Rascia [@taniarascia]                               */
+/*************************************************************************/
+
+@theme-type: dark;
+
+// Global Settings
+@text-height      : 14px;
+@global-accent    : #ffd479;  
+@global-arrow     : #8c8c8c;
+@global-background: #2d2d2d;
+@global-boxshadow : rgba(17,17,17,.6);
+@global-divider   : lighten(@global-background, 10%);
+@global-hover     : lighten(@global-background, 5%);
+@global-input     : #111;
+@global-selected  : rgba(0,0,0,.7);
+@global-text      : #b3b9c5;
+@global-toolbar   : #444;
+@global-label     : #626262;
+@global-warn      : #ffeea6;
+@global-error     : #f2777a;
+@global-link      : #92D192;
+@global-textshadow: darken(@global-background, 10%);
+
+// JavaScript
+@js-atom      : #92D192;
+@js-attribute : #b3b9c5;
+@js-builtin   : #62CFCF;
+@js-comment   : #777c85;
+@js-def       : #49a6d2;
+@js-error     : #ad4e4e;
+@js-header    : #92D192;
+@js-hr        : #777c85;
+@js-keyword   : #ffeea6;
+@js-link      : #92D192;
+@js-meta      : #ffffff;
+@js-number    : #fca369;
+@js-operator  : #AC8D58;
+@js-property  : #b3b9c5;
+@js-string    : #92D192;
+@js-tag       : #49a6d2;
+@js-variable  : #62CFCF;
+@js-variable-2: #f2777a;
+
+// JavaScript Objects
+@js-obj-array    : #777c85;
+@js-obj-boolean  : #E1A6F2;
+@js-obj-function : #ffffff;
+@js-obj-name     : #b3b9c5;
+@js-obj-number   : #fca369;
+@js-obj-preview  : #dddddd;
+@js-obj-regexp   : #92D192;
+@js-obj-string   : #92D192;
+@js-obj-undefined: #ad4e4e;
+
+// CSS
+@css-at-rule   : #ffeea6;
+@css-atom      : #E1A6F2;
+@css-builtin   : #ffd479;
+@css-comment   : #8a8a80;
+@css-def       : #6AB0F3;
+@css-important : #ffeea6;
+@css-meta      : #ffffff;
+@css-number    : #fca369;
+@css-operator  : #AC8D58;
+@css-property  : #E1A6F2; 
+@css-qualifier : #6AB0F3;
+@css-string    : #92D192;
+@css-string-2  : #92D192;
+@css-tag       : #6AB0F3;
+@css-variable  : #f2777a;
+@css-variable-2: #ffeea6;
+@css-id        : #E1A6F2;
+@css-class     : #ffd479;
+@css-pseudo    : #62CFCF;
+
+// HTML Highlighting
+@xml-attribute         : #ffd479;
+@xml-comment           : #777c85;
+@xml-error             : #f2777a;
+@xml-iframe-root       : #E1A6F2;
+@xml-js-node           : #abb2bf;
+@xml-link              : #92D192;
+@xml-pseudo            : #62CFCF;
+@xml-pseudo-highlighted: #62CFCF;
+@xml-shadow-root       : #fca369;
+@xml-string            : #92D192;
+@xml-tag               : #6AB0F3;
+@xml-bracket           : #abb2bf;
+
+// Tabbed Header Configuration
+@toolbar-main         : @global-toolbar;
+@toolbar-sub          : darken(@global-toolbar, 5%);
+@toolbar-divider      : darken(@toolbar-sub, 2%);
+@toolbar-item-divider : darken(@tab-label, 5%);
+@tab-color-top        : lighten(@global-background, 18%);
+@tab-color-bottom     : lighten(@global-background, 8%);
+@tab-highlighted      : @global-accent;
+@tab-label            : #9a9a9a;
+@tab-label-selected   : #f8f8f8;
+@tab-label-unsaved    : #ffeea6;
+
+// Toolbars
+@tab-main-icons-padding : 6px;
+@tab-main-toolbar-height: 34px;
+@tab-sub-icons-padding : 0;
+@tab-sub-toolbar-height: 25px;
+
+// Glyphs
+@glyph-active  : @global-accent;
+@glyph-inactive: lighten(@global-background, 35%);
+@glyph-hover: lighten(@global-background, 45%);
+
+// Crumbs
+@crumb-selected-background: @global-selected;
+@crumb-selected-text      : #f8f8f8;
+@crumb-text               : @global-text;
+
+// Console
+@console-default-text: @global-text;
+@console-input-text  : #f1f1f1;
+@console-link        : #848991;
+
+// Dialog [Ctrl/Cmd + O | Ctrl/Cmd + Shift + O]
+@dialog-background     : lighten(@global-background, 5%);
+@dialog-border         : lighten(@global-background, 10%);
+@dialog-item-background: @global-background;
+@dialog-item-highlight : @global-accent;
+@dialog-item-text      : lighten(@global-text, 10%);
+
+// Editor Properties
+@cm-cursor             : #fff;
+@cm-error              : #f2777a;
+@cm-gutter             : lighten(@global-background, 4%);
+@cm-gutter-border      : lighten(@global-background, 5%);
+@cm-gutter-lines       : lighten(@global-background, 40%);
+@cm-matching-bracket   : #ffffff;
+@cm-nonmatching-bracket: #f2777a;
+@cm-lines-no-sourcemap : lighten(@global-background, 1%);
+@cm-selected           : @global-selected;
+@cm-whitespace         : lighten(@global-background, 5%);
+
+// Element Highlighter
+@eh-base-color          : @global-selected;
+@eh-children-shadow     : darken(@global-background, 10%);
+@eh-editing-outline     : @global-accent;
+@eh-highlight-background: @selection-background;
+@eh-highlight-outline   : @selection-border;
+@eh-hover-background    : @hover-background;
+@eh-hover-outline       : @hover-border;
+@eh-clipboard-selection : lighten(@global-background, 40%);
+
+// Elements Sidebar
+@style-edit-mode-selector-text: #848991;
+@style-section                : lighten(@global-background, 15%);
+@style-selector-text          : #b3b9c5;
+@style-separator              : lighten(@global-background, 10%);
+@style-value                  : #E1A6F2;
+
+// Filters
+@filter-background   : lighten(@global-background,5%);
+@filter-text         : @global-text;
+@filter-hover        : lighten(@global-background, 10%);
+@filter-selected     : lighten(@global-background, 15%);
+@filter-selected-text: lighten(@global-text, 15%);
+@filter-error        : @global-error;
+@filter-warning      : #ffeea6;
+@filter-info         : #b3b9c5;
+@filter-log          : #b3b9c5;
+@filter-debug        : @global-error;
+@filter-verbose      : @global-error;
+
+// Find
+@find-header-background   : lighten(@global-background, 3%);
+@find-header-text         : #848991;
+@find-highlight-background: @global-accent;
+@find-highlight-text      : #111111;
+
+// Forms
+@form-button-background: lighten(@global-background, 5%);
+@form-button-border    : lighten(@global-background, 10%);
+@form-button-pressed   : inset 0 1px 1px 0 darken(@global-background, 5%), 0 1px 1px 0 lighten(@global-background, 5%);
+@form-button-text      : darken(@global-text, 10%);
+@form-input-background : lighten(@global-background, 5%);
+@form-input-border     : lighten(@global-background, 10%);
+@form-input-text       : lighten(@global-text, 10%);
+@form-label-text       : @global-text;
+
+// Local Modifications
+@history-added-text  : #92D192;
+@history-removed-text: @global-error;
+
+// Screencast
+@screencast-viewport       : lighten(@global-background, 10%);
+@screencast-viewport-border: @global-accent;
+
+// Scrollbars
+@sb-thickness      : 12px;
+@sb-thumb-border   : darken(@global-background, 10%);
+@sb-thumb-color    : lighten(@global-background, 15%);
+@sb-thumb-roundness: 2px;
+
+// Settings
+@settings-background       : #444;
+@settings-border           : #454545;
+@settings-dialog           : #333;
+@settings-edit-background  : #222;
+@settings-folder-background: #222;
+@settings-selected         : rgba(150, 255, 150, 0.2);
+
+// Table/Sidebar Selections | Breakpoints
+@selection-background: @global-selected;
+@selection-border    : lighten(@selection-background, 15%);
+@selection-text      : lighten(@global-text, 10%);
+@hover-background: @global-hover;
+@hover-border    : lighten(@hover-background, 10%);
+@hover-text      : @global-text;
+
+// Sources Tab
+@sources-exception-all     : #92D192;
+@sources-exception-uncaught: #ffd479;
+@sources-highlight-text    : darken(@global-background, 4%);
+@sources-pane-background   : rgba(0,0,0,.8);
+@sources-placeholder-text  : #848991;
+@sources-save-background   : @global-background;
+@sources-text              : @global-text;
+
+// Tables
+@table-primary  : @global-background;
+@table-secondary: lighten(@global-background,2%);
+
+// Timeline
+@timeline-expandable-border   : lighten(@global-background, 35%);
+@timeline-graph-bar           : rgba(200,200,200,.3);
+@timeline-graph-bar-background: rgba(200,200,200,.2);
+@timeline-overview-background : @global-background;
+@timeline-graph-selection     : @global-accent;
+@timeline-progress-pane       : fade(lighten(@global-background,30%), 50%);
+@timeline-resources-divider   : lighten(@global-background, 2%);
+
+
+
+// Popovers
+@popover-background       : lighten(@global-background, 5%);
+@popover-details-row-title: #ffd479;
+@popover-details-title    : #ffd479;
+@popover-title            : #E1A6F2;
+@popover-tree-border      : #848991;

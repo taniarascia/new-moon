@@ -1,0 +1,123 @@
+/***************************************************
+/* Dialog Boxes
+/* -------------------------------------------
+/* Search Functions/Selectors in File [Ctrl+Shift+O]
+/***************************************************/
+.filtered-item-list-dialog,
+.dialog {
+	background: @dialog-background !important;
+	box-shadow: 0 5px 15px 5px rgba(0,0,0,.6) !important;
+	border: 1px solid @dialog-border !important;
+
+	.fill {
+		border: none !important;
+	}
+
+	.selected {
+		background-color: @selection-background !important;
+		box-shadow: inset 0 1px 5px 0 rgba(0,0,0,.3) !important;
+		color: @- !important; .contrast(@dialog-item-text, 10%);
+	}
+
+	input,
+	input:focus {
+		background-color: @dialog-item-background !important;
+		border: none !important;
+		color: @dialog-item-text !important;
+		padding: 0 5px;
+	}
+}
+
+.filtered-item-list-dialog-item {
+	background-color: @dialog-item-background !important;
+	& { border-top: 1px solid @- !important; .contrast(@dialog-item-background, 5%) };
+	& { border-bottom: 1px solid @- !important; .contrast(@dialog-item-background, 10%) };
+
+	.filtered-item-list-dialog-subtitle {
+		color: @- !important; .contrast(@dialog-item-text, 40%, invert);
+	}
+
+	&:not(.selected):hover {
+		background-color: @hover-background !important;
+		box-shadow: inset 0 1px 5px 0 rgba(0,0,0,.5) !important;
+	}
+
+	.filtered-item-list-dialog-title,
+	span {
+		color: @dialog-item-text !important;
+	}
+
+	.highlight {
+		color: @global-accent !important;
+	}
+}
+
+//bg of new file dialog
+.filtered-item-list-dialog > div.container {
+	background-color: @global-background !important
+}
+
+// button styles
+.text-button,
+[is="text-button"] {
+	.button-styles();
+}
+
+.chrome-select {
+	.input-styles();
+	background-image: none !important;
+	text-shadow: none !important;
+	-webkit-appearance: menulist !important;
+	box-shadow: none !important;
+}
+
+// ==========================================================================
+// File/Function Dialog
+// ==========================================================================
+.filtered-list-widget {
+	background: @dialog-background !important;
+	box-shadow: 0 5px 15px 5px rgba(0,0,0,.6) !important;
+	border: 1px solid @dialog-border !important;
+
+	.not-found-text {
+		background-color: @dialog-item-background !important;
+		color: @dialog-item-text !important;
+	}
+
+	.filtered-list-widget-prompt-element {
+		box-shadow: none !important;
+		color: @global-text !important;
+		background-color: @global-background !important;
+	}
+
+	> div.container {
+		background: @global-background !important;
+	}
+
+	.filtered-list-widget-item {
+		background-color: @dialog-item-background !important;
+		& { border-top: 1px solid @- !important; .contrast(@dialog-item-background, 5%) };
+		& { border-bottom: 1px solid @- !important; .contrast(@dialog-item-background, 10%) };
+
+		&.selected {
+			background-color: @selection-background !important;
+			color: @- !important; .contrast(@dialog-item-text, 10%);
+		}
+
+		&:not(.selected):hover {
+			background-color: @hover-background !important;
+		}
+
+		.highlight {
+			color: @global-accent !important;
+		}
+	}
+
+	.filtered-list-widget-title {
+		color: @dialog-item-text !important;
+	}
+
+	.filtered-list-widget-subtitle {
+		color: @- !important; .contrast(@dialog-item-text, 40%, invert);
+	}
+}

@@ -1,0 +1,33 @@
+// Layers Panel
+
+.paint-profiler-overview,
+.paint-profiler-canvas-container canvas,
+.paint-profiler-view canvas {
+	background-color: @global-background !important;
+}
+
+// overlay while profile is collecting info
+.progress-banner {
+	background-color: @timeline-progress-pane !important;
+	color: @global-text !important;
+}
+
+.layers.panel {
+
+	.outline-disclosure li {
+		margin-top: 2px !important;
+	}
+
+	.selection {
+		height: 18px !important;
+	}
+}
+
+.sidebar-tree li {
+	color: @global-text !important;
+}
+
+.section .properties .number, 
+.event-properties .number {
+	&:extend(.cm-js-number);
+}

@@ -1,0 +1,69 @@
+// ==========================================================================
+// Animation Inspection
+// ==========================================================================
+
+.animation-playback-rate-button {
+	.button-styles();
+	border-radius: unset !important;
+
+	&.selected {
+		color: @global-accent !important;
+	}
+}
+
+.animation-timeline-header::after {
+	background-color: @global-background !important;
+	border-right: 1px solid @global-divider !important;
+}
+
+.animation-buffer-preview {
+	background-color: lighten(@global-background, 5%) !important;
+
+	&.selected {
+		border: 1px solid @global-accent !important;
+	}
+}
+
+.animation-timeline-buffer,
+.animation-timeline-buffer-hint {
+	border-bottom: 1px solid @toolbar-divider !important;
+}
+
+.animation-timeline-header,
+.animation-timeline-toolbar-container {
+	border-bottom: 1px solid @toolbar-divider !important;
+}
+
+.toolbar-divider {
+	background-color: @toolbar-item-divider !important;
+}
+
+.animation-controls,
+.animation-timeline-buffer:empty ~ .animation-timeline-buffer-hint,
+.animation-timeline-buffer:not(:empty) ~ .animation-timeline-rows:empty ~ .animation-timeline-rows-hint {
+	color: @global-text !important;
+}
+
+.animation-node-description {
+	background-color: @global-background !important;
+	border-bottom: 1px solid @global-divider !important;
+}
+
+.animation-node-row {
+	border-bottom: 1px dashed @global-divider !important;
+}
+
+.animation-buffer-preview.selected > svg > line {
+	stroke: @global-text !important;
+}
+
+rect.animation-timeline-grid-line {
+	fill: @global-divider !important;
+}
+
+// Syntax Highlighting
+.node-label-name { color: @xml-tag !important; }
+
+.node-label-id,
+.node-label-class,
+.node-label-pseudo { color: @css-def !important; }
