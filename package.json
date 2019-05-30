@@ -1,0 +1,28 @@
+{
+  "name": "hyperterm-new-moon-theme",
+  "version": "1.0.0",
+  "description": "A Hyper theme based on New Moon",
+  "main": "index.js",
+  "author": "Enrique Chavez <noone@tmeister.net> (http://twitter.com/tmeister)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tmeister/hyperterm-new-moon-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tmeister/hyperterm-new-moon-theme/issues"
+  },
+  "homepage": "https://github.com/Tmeister/hyperterm-new-moon-theme#readme",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "hyper",
+    "hyper-theme",
+    "hyperterm",
+    "theme",
+    "ui",
+    "terminal",
+    "new moon"
+  ]
+}
