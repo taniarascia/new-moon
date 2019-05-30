@@ -30,8 +30,6 @@ New Moon is available for:
 - [Blink Shell](https://github.com/taniarascia/new-moon/tree/master/blink-shell)
 - [VIM](https://github.com/taniarascia/new-moon.vim)
 
-> **Note:** The Visual Studio Code, Chrome DevTools, and iTerm2 themes are actively maintained.
-
 ## What Are People Saying?
 
 > “Absolutely beautiful theme. Definitely deserves more recognition.”
