@@ -2,7 +2,7 @@
 
 # New Moon Syntax Theme 
 
-[![Version](https://vsmarketplacebadge.apphb.com/version-short/taniarascia.new-moon-vscode.svg?color=purple)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/taniarascia.new-moon-vscode.svg?color=purple)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/taniarascia.new-moon-vscode.svg?color=purple)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Downloads](https://badges.ml/dt/new-moon)](https://badges.ml/#new-moon)
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/taniarascia.new-moon-vscode.svg?color=purple)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/taniarascia.new-moon-vscode.svg?color=purple)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/taniarascia.new-moon-vscode.svg?color=purple)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://badges.ml/dt/new-moon)](https://badges.ml/#new-moon) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) 
 
 The optimized dark theme for web development.
 
