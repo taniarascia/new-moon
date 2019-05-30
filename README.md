@@ -6,7 +6,7 @@
 
 The optimized dark theme for web development.
 
-- [View Website](https://taniarascia.github.io/new-moon/)
+- [New Moon Theme Website](https://taniarascia.github.io/new-moon/)
 
 ## Intuitive Syntax Highlighting
 
