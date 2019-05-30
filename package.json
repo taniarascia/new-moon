@@ -2,12 +2,12 @@
   "name": "new-moon",
   "version": "1.0.0",
   "private": true,
-  "description": "🌙 New Moon Syntax Theme - The optimized dark theme for web development.",
+  "description": "🌙 New Moon Syntax Theme - the optimized dark theme for web development.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/taniarascia/new-moon.git"
   },
-  "author": "Tania Rascia <me@taniarascia.com> (https://www.taniarascia.com/)",
+  "author": "Tania Rascia <tania@taniarascia.com> (https://www.taniarascia.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/taniarascia/new-moon/issues"
