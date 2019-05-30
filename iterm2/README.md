@@ -1,4 +1,4 @@
-# New Moon iTerm2
+# New Moon Theme for iTerm2
 
 ## Installation
 
