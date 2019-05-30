@@ -1,0 +1,36 @@
+{
+  "name": "new-moon-vscode",
+  "displayName": "New Moon Syntax Theme",
+  "description": "The optimized dark theme for web development. Your new favorite theme.",
+  "version": "1.8.4",
+  "icon": "images/new-moon-vector.png",
+  "publisher": "taniarascia",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taniarascia/new-moon-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/taniarascia/new-moon-vscode/issues",
+    "email": "taniarascia@gmail.com"
+  },
+  "engines": {
+    "vscode": "*"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "New Moon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/new-moon.json"
+      }
+    ]
+  },
+  "__metadata": {
+    "id": "da62dfba-5132-4928-a127-0ef0c8af08c3",
+    "publisherId": "1382f5b7-7cf4-4ace-8ec1-ce9e27570ccb",
+    "publisherDisplayName": "Tania Rascia"
+  }
+}
