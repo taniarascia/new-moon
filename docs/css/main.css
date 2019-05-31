@@ -52,12 +52,11 @@ img {
 
 .logo {
   margin: 1.5rem auto;
-  max-width: 100px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 699.98px) {
   .logo {
-    max-width: 150px;
+    max-width: 100px;
   }
 }
 
