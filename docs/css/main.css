@@ -52,19 +52,18 @@ img {
 
 .logo {
   margin: 1.5rem auto;
-  max-width: 100px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 699.98px) {
   .logo {
-    max-width: 150px;
+    max-width: 100px;
   }
 }
 
 .logo2 {
   max-width: 50px;
   margin: 1.5rem 0.5rem;
-  transition: all 0.1s ease;
+  transition: transform 0.15s ease-in-out;
 }
 
 .logo2:hover {
