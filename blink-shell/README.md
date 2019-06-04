@@ -1,7 +1,8 @@
-# new-moon-blink #
+# new-moon-blink
+
 New Moon theme for Blink Shell
 
-## Installation ##
+## Installation
 
 1. In Blink Shell for iOS, open the config panel by typing `config`
 2. Appearance > Add a new theme
