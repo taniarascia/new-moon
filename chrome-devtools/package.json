@@ -1,18 +1,16 @@
 {
   "name": "new-moon-chrome-devtools",
   "version": "1.1.1",
-  "description": "New Moon Theme for Chrome DevTools",
+  "description": "New Moon for Chrome DevTools",
+  "homepage": "https://taniarascia.github.io/new-moon",
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/taniarascia/new-moon-chrome-devtools.git"
   },
-  "author": "Tania Rascia",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/taniarascia/new-moon-chrome-devtools/issues"
   },
-  "homepage": "https://taniarascia.github.io/new-moon",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +20,7 @@
     "grunt-contrib-compress": "^1.4.3",
     "grunt-contrib-less": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0"
-  }
+  },
+  "author": "Tania Rascia <tania@taniarascia.com>",
+  "license": "MIT"
 }
