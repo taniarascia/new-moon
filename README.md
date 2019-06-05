@@ -1,12 +1,10 @@
 ![New Moon Icon](images/new-moon-thumbnail.svg)
 
-# New Moon Syntax Theme 
+# New Moon Theme 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  [![Version](https://vsmarketplacebadge.apphb.com/version-short/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://badges.ml/dt/new-moon)](https://badges.ml/#new-moon) 
 
 The optimized dark theme for web development.
-
-- [New Moon Theme Website](https://taniarascia.github.io/new-moon/)
 
 ## Intuitive Syntax Highlighting
 
