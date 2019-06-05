@@ -1,0 +1,25 @@
+{
+  "title": "New Moon",
+  "name": "new-moon",
+  "description": "New Moon Theme for Brackets. A beautiful, middle-contrast dark theme optimized for web development. Your new favorite theme.",
+  "version": "2.5.0",
+  "author": "Tania Rascia <taniarascia@gmail.com> (https://www.taniarascia.com)",
+  "homepage": "https://github.com/taniarascia/new-moon-brackets",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "dark",
+    "php",
+    "html",
+    "css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/taniarascia/new-moon-brackets.git"
+  },
+  "theme": {
+    "file": "main.less",
+    "dark": true
+  },
+  "screenshot": "images/screenshot.png"
+}
