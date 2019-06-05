@@ -1,4 +1,4 @@
-![New Moon Icon](images/new-moon-vector-thumbnail.png)
+![New Moon Icon](images/new-moon-thumbnail.svg)
 
 # New Moon Syntax Theme 
 
