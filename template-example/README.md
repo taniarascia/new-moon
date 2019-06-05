@@ -8,11 +8,11 @@ The optimized dark theme for web development.
 
 ## Installation
 
--Ins
+- Instructions to install
 
 ## Author
 
-- [Your name](https://www.example.com)
+- [Author name](https://www.example.com)
 
 ## License
 
