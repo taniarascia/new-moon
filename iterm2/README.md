@@ -1,7 +1,3 @@
-# New Moon for iTerm2
-
-## Installation
-
 ![Logo](../images/new-moon-thumbnail.svg)
 
 # New Moon for [iTerm2](https://www.iterm2.com/)
