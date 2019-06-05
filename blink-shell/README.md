@@ -1,10 +1,20 @@
-# new-moon-blink
+![Logo](../images/new-moon-thumbnail.svg)
 
-New Moon theme for Blink Shell
+# New Moon for [Blink Shell](https://www.blink.sh/)
+
+The optimized dark theme for web development.
 
 ## Installation
 
-1. In Blink Shell for iOS, open the config panel by typing `config`
-2. Appearance > Add a new theme
-3. THEME NAME will be `New Moon`
-4. JS THEME FILE URL ADRESS will be `https://raw.githubusercontent.com/JeanLevasseur/new-moon-blink/master/new_moon.js`
+- In Blink Shell for iOS, open the config panel by typing `config`
+- `Appearance > Add a new theme`
+- `Theme Name` will be `New Moon`
+- `JS theme file URL address` will be `https://github.com/taniarascia/new-moon/blob/master/blink-shell/new_moon.js`
+
+## Author
+
+- [Jean Levasseur](https://github.com/JeanLevasseur)
+
+## License
+
+This project is open source and available under the [MIT License](../LICENSE).

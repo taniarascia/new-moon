@@ -94,6 +94,8 @@ New Moon themes for any app are welcome! To contribute:
 
 A git subtree will be added pulling your repo into the main `new-moon` repo.
 
+If your theme does not you to maintain its own repository, simply create a pull request with the theme.
+
 ## Acknowledgements
 
 - Originally inspired by Twilight and [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme)
