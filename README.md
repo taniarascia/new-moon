@@ -1,8 +1,8 @@
 ![New Moon Icon](images/new-moon-thumbnail.svg)
 
-# New Moon Theme 
+# New Moon Theme
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  [![Version](https://vsmarketplacebadge.apphb.com/version-short/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://badges.ml/dt/new-moon)](https://badges.ml/#new-moon) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Version](https://vsmarketplacebadge.apphb.com/version-short/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://badges.ml/dt/new-moon)](https://badges.ml/#new-moon)
 
 [New Moon](https://taniarascia.github.io/new-moon/) is the optimized dark theme for web development. It's intuitive, easy on the eyes, and consistent across your entire development environment. It's pleasant for long coding hours in any language, and particularly well suited for HTML, CSS, SCSS/LESS, PHP (WordPress), and JavaScript (React, Vue).
 
@@ -83,6 +83,16 @@ New Moon is available for:
 ### VSC: PHP
 
 ![New Moon Screenshot PHP](images/php.png)
+
+## Contributing
+
+New Moon themes for any app are welcome! To contribute:
+
+- Create a repo called `new-moon-app-name` based on [template-example](/template-example)
+- Add the code for your theme and update the README with a screenshot and installation instructions
+- Create an issue requesting to be added to the repository and link to your repo
+
+A git subtree will be added pulling your repo into the main `new-moon` repo.
 
 ## Acknowledgements
 
