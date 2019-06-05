@@ -2,7 +2,7 @@
 
 ## Installation
 
-![Logo](new-moon-logo.svg)
+![Logo](../images/new-moon-thumbnail.svg)
 
 # New Moon for [iTerm2](https://www.iterm2.com/)
 
@@ -19,7 +19,7 @@ The optimized dark theme for web development.
 
 ## Author
 
-- [Author name](https://www.example.com)
+- [Tania Rascia](https://www.taniarascia.com)
 
 ## License
 
