@@ -86,7 +86,7 @@ New Moon is available for:
 
 ## Acknowledgements
 
-- Originally inspired by Twilight and [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme).
+- Originally inspired by Twilight and [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme)
 - Chrome DevTools theme forked from [Zero Base Themes](https://github.com/mauricecruz/zero-base-themes)
 
 ## Author
