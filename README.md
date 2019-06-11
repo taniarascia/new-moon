@@ -23,6 +23,7 @@ New Moon is available for:
 - [Hyper Term](https://github.com/Tmeister/hyperterm-new-moon-theme)
 - [Blink Shell](https://github.com/taniarascia/new-moon/tree/master/blink-shell)
 - [VIM](https://github.com/taniarascia/new-moon.vim)
+- [Terminal.app](https://github.com/taniarascia/new-moon/tree/master/Terminal.app)
 
 ## What Are People Saying?
 
