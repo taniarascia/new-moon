@@ -4,7 +4,7 @@
 
 The optimized dark theme for web development.
 
-![Screenshot](../images/iterm2.png)
+![Screenshot](../images/Terminal.app.png)
 
 ## Installation
 
