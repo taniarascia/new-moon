@@ -1,6 +1,6 @@
 ![Logo](../images/new-moon-thumbnail.svg)
 
-# New Moon for [iTerm2](https://www.iterm2.com/)
+# New Moon for Terminal.app
 
 The optimized dark theme for web development.
 
@@ -10,7 +10,7 @@ The optimized dark theme for web development.
 
 - Run `curl -O https://raw.githubusercontent.com/taniarascia/new-moon/master/Terminal.app/new-moon.terminal` or save the file manually
 - Open `./new-moon.terminal`
-- Open terminal preferences (<kbd>cmd</kbd> + <kbd>,<kbd>)
+- Open terminal preferences (<kbd>cmd</kbd> + <kbd>,</kbd>)
 - Go to Profiles and select `new-moon`
 
 ## Author
