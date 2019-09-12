@@ -15,14 +15,15 @@
 New Moon is available for:
 
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode)
-- [Chrome DevTools](https://github.com/taniarascia/new-moon-chrome-devtools)
-- [iTerm2](https://github.com/taniarascia/new-moon/tree/master/iterm2)
+- [Chrome DevTools](https://chrome.google.com/webstore/detail/devtools-theme-new-moon/lndddploiofhfpdcoclegenegblkhlfk?hl=en)
 - [Brackets](https://github.com/taniarascia/new-moon-brackets)
 - [Sublime Text](https://packagecontrol.io/packages/New%20Moon%20Color%20Scheme)
 - [Atom](https://github.atom.io/packages/new-moon-atom-syntax)
+- [iTerm2](https://github.com/taniarascia/new-moon/tree/master/iterm2)
+- [Terminal.app](https://github.com/taniarascia/new-moon/tree/master/Terminal.app)
 - [Hyper Term](https://github.com/Tmeister/hyperterm-new-moon-theme)
 - [Blink Shell](https://github.com/taniarascia/new-moon/tree/master/blink-shell)
-- [VIM](https://github.com/taniarascia/new-moon.vim)
+- [Vim](https://github.com/taniarascia/new-moon.vim)
 
 ## What Are People Saying?
 
@@ -94,12 +95,12 @@ New Moon themes for any app are welcome! To contribute:
 
 A git subtree will be added pulling your repo into the main `new-moon` repo.
 
-If your theme does not you to maintain its own repository, simply create a pull request with the theme.
+If your theme does not require you to maintain its own repository, simply create a pull request with the theme in a folder.
 
 ## Acknowledgements
 
-- Originally inspired by Twilight and [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme)
-- Chrome DevTools theme forked from [Zero Base Themes](https://github.com/mauricecruz/zero-base-themes)
+- Originally inspired by Twilight and [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme).
+- Chrome DevTools theme forked from [Zero Base Themes](https://github.com/mauricecruz/zero-base-themes).
 
 ## Author
 
