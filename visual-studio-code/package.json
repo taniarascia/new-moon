@@ -2,7 +2,7 @@
   "name": "new-moon-vscode",
   "displayName": "New Moon Syntax Theme",
   "description": "The optimized dark theme for web development. Your new favorite theme.",
-  "version": "1.8.4",
+  "version": "1.8.6",
   "icon": "images/new-moon-vector.png",
   "publisher": "taniarascia",
   "repository": {
