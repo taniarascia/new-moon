@@ -19,7 +19,7 @@
     "tab.background": "#202020",
     "tab.inactiveBackground": "#202020",
     "tab.activeBackground": "#2d2d2d",
-    "statusBarItem.hoverBackground": "#888888",
+    "statusBarItem.hoverBackground": "#111",
     "findRangeHighlightBackground": "#66666699",
     "editor.findMatchBackground": "#101010",
     "editor.findMatchBorder": "#FFD479",
@@ -35,8 +35,8 @@
     "scrollbarSlider.hoverBackground": "#66666680",
     "sideBar.background": "#272727",
     "sideBarSectionHeader.background": "#202020",
-    "statusBar.background": "#21252B",
-    "statusBar.foreground": "#9DA5B4",
+    "statusBar.background": "#202020",
+    "statusBar.foreground": "#909090",
     "statusBar.noFolderBackground": "#21252B",
     "statusBar.debuggingForeground": "#FFFFFF",
     "extensionButton.prominentBackground": "#FFD479",
@@ -84,7 +84,6 @@
     "peekViewResult.selectionBackground": "#444444",
     "peekViewEditor.matchHighlightBackground": "#2d2d2d",
     "peekViewResult.matchHighlightBackground": "#2d2d2d"
-
   },
   "tokenColors": [
     {
