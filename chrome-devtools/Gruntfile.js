@@ -7,7 +7,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-bump')
 
   grunt.initConfig({
-    pkg: '<json:package.json>',
     compress: {
       main: {
         options: {
