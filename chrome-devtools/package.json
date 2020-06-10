@@ -2,7 +2,7 @@
   "name": "new-moon-chrome-devtools",
   "version": "1.1.1",
   "description": "New Moon for Chrome DevTools",
-  "homepage": "https://taniarascia.github.io/new-moon",
+  "homepage": "https://taniarascia.github.io/new-moon/",
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
@@ -12,7 +12,8 @@
     "url": "https://github.com/taniarascia/new-moon-chrome-devtools/issues"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "grunt package",
+    "test": "grunt"
   },
   "devDependencies": {
     "grunt": "^1.1.0",
