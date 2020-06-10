@@ -1,8 +1,8 @@
 ![New Moon Icon](https://github.com/taniarascia/new-moon-vscode/raw/master/images/new-moon-vector-thumbnail.png)
 
-# New Moon Syntax Theme 
+# New Moon Syntax Theme
 
-[![Version](https://vsmarketplacebadge.apphb.com/version-short/taniarascia.new-moon-vscode.svg?color=373277)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/taniarascia.new-moon-vscode.svg?color=373277)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/taniarascia.new-moon-vscode.svg?color=373277)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://badges.ml/dt/new-moon)](https://badges.ml/#new-moon) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) 
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/taniarascia.new-moon-vscode.svg?color=373277)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/taniarascia.new-moon-vscode.svg?color=373277)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/taniarascia.new-moon-vscode.svg?color=373277)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://badges.ml/dt/new-moon)](https://badges.ml/#new-moon) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 The optimized dark theme for web development.
 
@@ -59,13 +59,13 @@ New Moon is available for:
 | Foreground      | Light        | ![#b3b9c5](https://placehold.it/15/b3b9c5/000000?text=+) `#b3b9c5` |
 | Function        | Lightest     | ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff` |
 | Variable        | Red          | ![#f2777a](https://placehold.it/15/f2777a/000000?text=+) `#f2777a` |
-| Number          | Orange       | ![#FCA369](https://placehold.it/15/FCA369/000000?text=+) `#fca369` |
-| Attribute       | Yellow       | ![#FFD479](https://placehold.it/15/FFD479/000000?text=+) `#ffd479` |
-| Keyword         | Light Yellow | ![#ffeea6](https://placehold.it/15/FFEEA6/000000?text=+) `#ffeea6` |
-| String          | Green        | ![#92D192](https://placehold.it/15/92D192/000000?text=+) `#92d192` |
-| Class/Tag       | Blue         | ![#6AB0F3](https://placehold.it/15/6AB0F3/000000?text=+) `#6AB0F3` |
-| Constant/Pseudo | Aqua         | ![#76D4D6](https://placehold.it/15/76D4D6/000000?text=+) `#76d4d6` |
-| Support         | Purple       | ![#E1A6F2](https://placehold.it/15/E1A6F2/000000?text=+) `#e1a6f2` |
+| Number          | Orange       | ![#fca369](https://placehold.it/15/fca369/000000?text=+) `#fca369` |
+| Attribute       | Yellow       | ![#ffd479](https://placehold.it/15/ffd479/000000?text=+) `#ffd479` |
+| Keyword         | Light Yellow | ![#ffeea6](https://placehold.it/15/ffeea6/000000?text=+) `#ffeea6` |
+| String          | Green        | ![#92d192](https://placehold.it/15/92d192/000000?text=+) `#92d192` |
+| Class/Tag       | Blue         | ![#6ab0f3](https://placehold.it/15/6ab0f3/000000?text=+) `#6ab0f3` |
+| Constant/Pseudo | Aqua         | ![#76d4d6](https://placehold.it/15/76d4d6/000000?text=+) `#76d4d6` |
+| Support         | Purple       | ![#e1a6f2](https://placehold.it/15/e1a6f2/000000?text=+) `#e1a6f2` |
 | Operator        | Beige        | ![#ac8d58](https://placehold.it/15/ac8d58/000000?text=+) `#ac8d58` |
 
 ## Screenshots
