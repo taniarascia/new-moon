@@ -17,8 +17,8 @@
   "keywords": [],
   "dependencies": "",
   "devDependencies": {
-    "autoprefixer": "^9.5.1",
-    "postcss-cli": "^6.1.2"
+    "autoprefixer": "^9.8.0",
+    "postcss-cli": "^7.1.1"
   },
   "scripts": {
     "prefix": "npm run postcss",

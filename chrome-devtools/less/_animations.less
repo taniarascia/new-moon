@@ -10,29 +10,29 @@
 // ==========================================================================
 .show-popover-animations(@choice) when (@choice = true) {
 
-	@keyframes growFadeIn {
-		0% {
-			opacity: 0;
-			transform: scale(.3);
-		}
+  @keyframes growFadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(.3);
+    }
 
-		100% {
-			transform: scale(1);
-		}
-	}
+    100% {
+      transform: scale(1);
+    }
+  }
 
-	.popover {
-		animation: growFadeIn .2s ease-in-out;
+  .popover {
+    animation: growFadeIn .2s ease-in-out;
 
-		&.top-left-arrow { transform-origin: 25% 0%; }
-		&.top-right-arrow { transform-origin: 75% 0%; }
-		&.right-top-arrow { transform-origin: 100% 10%; }
-		&.right-bottom-arrow { transform-origin: 100% 90%;}
-		&.bottom-left-arrow { transform-origin: 25% 100%; }
-		&.bottom-right-arrow { transform-origin: 75% 100%; }
-		&.left-top-arrow { transform-origin: 0% 10%; }
-		&.left-bottom-arrow { transform-origin: 0% 90%; }
-	}
+    &.top-left-arrow { transform-origin: 25% 0%; }
+    &.top-right-arrow { transform-origin: 75% 0%; }
+    &.right-top-arrow { transform-origin: 100% 10%; }
+    &.right-bottom-arrow { transform-origin: 100% 90%;}
+    &.bottom-left-arrow { transform-origin: 25% 100%; }
+    &.bottom-right-arrow { transform-origin: 75% 100%; }
+    &.left-top-arrow { transform-origin: 0% 10%; }
+    &.left-bottom-arrow { transform-origin: 0% 90%; }
+  }
 }
 
 // ==========================================================================
@@ -40,15 +40,15 @@
 // ==========================================================================
 
 .show-child-highlighter-animations(@choice) when (@choice = true) {
-		/*-- HIGHLIGHT CHILDREN --*/
-	.elements-disclosure .parent + .children {
-		transition: .5s ease-in .25s;
-	}
+    /*-- HIGHLIGHT CHILDREN --*/
+  .elements-disclosure .parent + .children {
+    transition: .5s ease-in .25s;
+  }
 
-	.elements-disclosure .hovered,
-	.elements-disclosure .selected {
-		&.parent.expanded + .children > li:last-of-type .webkit-html-tag.close {
-			transition: opacity .5s ease-in-out .25s;
-		}
-	}
+  .elements-disclosure .hovered,
+  .elements-disclosure .selected {
+    &.parent.expanded + .children > li:last-of-type .webkit-html-tag.close {
+      transition: opacity .5s ease-in-out .25s;
+    }
+  }
 }
