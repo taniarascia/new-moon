@@ -2,7 +2,7 @@
 
 # New Moon Theme
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Version](https://vsmarketplacebadge.apphb.com/version-short/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Rating](https://vsmarketplacebadge.apphb.com/rating-star/taniarascia.new-moon-vscode.svg?color=blue)]
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Version](https://vsmarketplacebadge.apphb.com/version-short/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/taniarascia.new-moon-vscode.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode) ![Rating](https://vsmarketplacebadge.apphb.com/rating-star/taniarascia.new-moon-vscode.svg?color=blue)
 
 [New Moon](https://taniarascia.github.io/new-moon/) is the optimized dark theme for web development. It's intuitive, easy on the eyes, and consistent across your entire development environment. It's pleasant for long coding hours in any language, and particularly well suited for HTML, CSS, SCSS/LESS, PHP (WordPress), and JavaScript (React, Vue).
 
