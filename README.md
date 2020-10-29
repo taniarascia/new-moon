@@ -24,6 +24,7 @@ New Moon is available for:
 - [Hyper Term](https://github.com/Tmeister/hyperterm-new-moon-theme)
 - [Blink Shell](https://github.com/taniarascia/new-moon/tree/master/blink-shell)
 - [Vim](https://github.com/taniarascia/new-moon.vim)
+- [Alfred](https://www.alfredapp.com/extras/theme/3iInBeai82/)
 
 ## What Are People Saying?
 
@@ -44,6 +45,9 @@ New Moon is available for:
 
 > “Wonderful. Well crafted with a clear sense of experience and focus. It actually helps me code more by enjoying the process more. Excellent work Tania.”
 > — _Monte_
+
+> “Sometimes I open my editor just to admire New Moon and be inspired. Truly a work of art."
+> — _Sobie_
 
 ## Colors
 
