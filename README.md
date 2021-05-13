@@ -25,6 +25,8 @@ New Moon is available for:
 - [Blink Shell](https://github.com/taniarascia/new-moon/tree/master/blink-shell)
 - [Vim](https://github.com/taniarascia/new-moon.vim)
 - [Alfred](https://www.alfredapp.com/extras/theme/3iInBeai82/)
+- [Slack](https://github.com/taniarascia/new-moon/tree/master/slack)
+
 
 ## What Are People Saying?
 
