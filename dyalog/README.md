@@ -8,7 +8,7 @@ The optimized dark theme for web development.
 
 ## Installation
 
-- Nothing to install; comes bundled with both with Dyalog APL/W version 18.2 and with RIDE 4.4 or higher
+- Nothing to install; comes bundled with both Dyalog APL/W version 18.2 and RIDE 4.4
 - For Dyalog APL/W:
   - Go to `Options > Colours > Syntax`
   - Select `New Moon` from scheme
