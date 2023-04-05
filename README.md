@@ -8,7 +8,7 @@
 
 - Intuitive connections between HTML and CSS
 - Clear distinctions between code and markup
-- Optimized for JSX/React, Vue, and PHP/WordPress
+- Optimized for JSX/React, Vue, and PHP/WordPress and manymore
 
 ## Platforms
 
